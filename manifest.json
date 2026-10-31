@@ -1,0 +1,218 @@
+{
+ "school": "Shaheen Group of Institutions",
+ "exam": "NEET",
+ "classes": [
+  {
+   "id": "class-11",
+   "name": "Class XI",
+   "subjects": [
+    {
+     "id": "physics",
+     "name": "Physics",
+     "chapters": [
+      {
+       "n": 1,
+       "id": "01-units-and-measurements",
+       "title": "Units and Measurements",
+       "status": "ready"
+      },
+      {
+       "n": 2,
+       "id": "02-motion-in-a-straight-line",
+       "title": "Motion in a Straight Line",
+       "status": "soon"
+      },
+      {
+       "n": 3,
+       "id": "03-motion-in-a-plane",
+       "title": "Motion in a Plane",
+       "status": "soon"
+      },
+      {
+       "n": 4,
+       "id": "04-laws-of-motion",
+       "title": "Laws of Motion",
+       "status": "soon"
+      },
+      {
+       "n": 5,
+       "id": "05-work-energy-and-power",
+       "title": "Work, Energy and Power",
+       "status": "soon"
+      },
+      {
+       "n": 6,
+       "id": "06-system-of-particles-and-rotational-motion",
+       "title": "System of Particles and Rotational Motion",
+       "status": "soon"
+      },
+      {
+       "n": 7,
+       "id": "07-gravitation",
+       "title": "Gravitation",
+       "status": "soon"
+      },
+      {
+       "n": 8,
+       "id": "08-mechanical-properties-of-solids",
+       "title": "Mechanical Properties of Solids",
+       "status": "soon"
+      },
+      {
+       "n": 9,
+       "id": "09-mechanical-properties-of-fluids",
+       "title": "Mechanical Properties of Fluids",
+       "status": "soon"
+      },
+      {
+       "n": 10,
+       "id": "10-thermal-properties-of-matter",
+       "title": "Thermal Properties of Matter",
+       "status": "soon"
+      },
+      {
+       "n": 11,
+       "id": "11-thermodynamics",
+       "title": "Thermodynamics",
+       "status": "soon"
+      },
+      {
+       "n": 12,
+       "id": "12-kinetic-theory",
+       "title": "Kinetic Theory",
+       "status": "soon"
+      },
+      {
+       "n": 13,
+       "id": "13-oscillations",
+       "title": "Oscillations",
+       "status": "soon"
+      },
+      {
+       "n": 14,
+       "id": "14-waves",
+       "title": "Waves",
+       "status": "soon"
+      }
+     ]
+    },
+    {
+     "id": "chemistry",
+     "name": "Chemistry",
+     "chapters": []
+    },
+    {
+     "id": "biology",
+     "name": "Biology",
+     "chapters": []
+    }
+   ]
+  },
+  {
+   "id": "class-12",
+   "name": "Class XII",
+   "subjects": [
+    {
+     "id": "physics",
+     "name": "Physics",
+     "chapters": [
+      {
+       "n": 1,
+       "id": "01-electric-charges-and-fields",
+       "title": "Electric Charges and Fields",
+       "status": "soon"
+      },
+      {
+       "n": 2,
+       "id": "02-electrostatic-potential-and-capacitance",
+       "title": "Electrostatic Potential and Capacitance",
+       "status": "soon"
+      },
+      {
+       "n": 3,
+       "id": "03-current-electricity",
+       "title": "Current Electricity",
+       "status": "soon"
+      },
+      {
+       "n": 4,
+       "id": "04-moving-charges-and-magnetism",
+       "title": "Moving Charges and Magnetism",
+       "status": "soon"
+      },
+      {
+       "n": 5,
+       "id": "05-magnetism-and-matter",
+       "title": "Magnetism and Matter",
+       "status": "soon"
+      },
+      {
+       "n": 6,
+       "id": "06-electromagnetic-induction",
+       "title": "Electromagnetic Induction",
+       "status": "soon"
+      },
+      {
+       "n": 7,
+       "id": "07-alternating-current",
+       "title": "Alternating Current",
+       "status": "soon"
+      },
+      {
+       "n": 8,
+       "id": "08-electromagnetic-waves",
+       "title": "Electromagnetic Waves",
+       "status": "soon"
+      },
+      {
+       "n": 9,
+       "id": "09-ray-optics-and-optical-instruments",
+       "title": "Ray Optics and Optical Instruments",
+       "status": "soon"
+      },
+      {
+       "n": 10,
+       "id": "10-wave-optics",
+       "title": "Wave Optics",
+       "status": "soon"
+      },
+      {
+       "n": 11,
+       "id": "11-dual-nature-of-radiation-and-matter",
+       "title": "Dual Nature of Radiation and Matter",
+       "status": "soon"
+      },
+      {
+       "n": 12,
+       "id": "12-atoms",
+       "title": "Atoms",
+       "status": "soon"
+      },
+      {
+       "n": 13,
+       "id": "13-nuclei",
+       "title": "Nuclei",
+       "status": "soon"
+      },
+      {
+       "n": 14,
+       "id": "14-semiconductor-electronics",
+       "title": "Semiconductor Electronics",
+       "status": "soon"
+      }
+     ]
+    },
+    {
+     "id": "chemistry",
+     "name": "Chemistry",
+     "chapters": []
+    },
+    {
+     "id": "biology",
+     "name": "Biology",
+     "chapters": []
+    }
+   ]
+  }
+ ]
+}
