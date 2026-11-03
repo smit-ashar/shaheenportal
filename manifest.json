@@ -65,7 +65,10 @@
        "n": 9,
        "id": "09-mechanical-properties-of-fluids",
        "title": "Mechanical Properties of Fluids",
-       "status": "soon"
+       "status": "ready",
+       "slides": 112,
+       "kb": 313,
+       "updated": "03 Nov 2026"
       },
       {
        "n": 10,
