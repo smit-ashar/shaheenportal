@@ -741,6 +741,46 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 #sh-deck .pq-wrap.tight .pq-o button{font-size:30px;padding:10px 20px}
 #sh-deck .pq-wrap.tight .pq-st{font-size:27px;padding:7px 20px;line-height:1.3}
 
+#sh-deck .pq-wrap.fig{display:grid;grid-template-columns:1fr 700px;gap:24px;align-items:start}
+#sh-deck .pq-main{display:flex;flex-direction:column;gap:12px;min-width:0}
+#sh-deck .pq-fig{background:var(--glass);border:1px solid var(--line);border-radius:22px;padding:14px;display:grid;place-items:center}
+#sh-deck .pq-fig svg{width:100%;height:auto;display:block}
+#sh-deck .pq-th{display:flex;gap:16px;align-items:center;background:rgba(138,181,214,.1);border-left:5px solid var(--sky);border-radius:12px;padding:8px 18px;font-size:27px;color:#dcecf8}
+#sh-deck .pq-th b{font:800 15px var(--f-head);letter-spacing:.18em;text-transform:uppercase;color:var(--sky);flex:none}
+#sh-deck .fc-card{display:flex;flex-direction:column;gap:6px}
+#sh-deck .fc-card svg{width:100%;height:auto;display:block;border-radius:12px;margin-bottom:6px}
+#sh-deck .df-wrap{display:flex;gap:28px;width:100%;align-items:center}
+#sh-deck .df-wrap .df-fig{flex:none;width:840px;display:grid;place-items:center}
+#sh-deck .df-wrap .df-fig svg{width:100%;height:auto}
+#sh-deck .ut-wrap{display:flex;gap:28px;width:100%;align-items:center}
+#sh-deck .ut-wrap .ut-fig{flex:none;width:620px;display:grid;place-items:center}
+#sh-deck .ut-wrap .ut-fig svg{width:100%;height:auto}
+
+#sh-deck .pq-wrap.fig .pq-q{font-size:32px;line-height:1.25}
+#sh-deck .pq-wrap.fig .pq-o button{font-size:28px;padding:8px 18px}
+#sh-deck .pq-wrap.fig .pq-st{font-size:25px;padding:6px 18px;line-height:1.28}
+#sh-deck .pq-wrap.fig .pq-th{font-size:25px;padding:6px 16px}
+#sh-deck .fc-card svg{height:118px}
+#sh-deck .fc-card{padding:16px 24px}
+#sh-deck .fc-card h3{margin:0}
+#sh-deck .fc-card svg{height:190px}
+#sh-deck .pq-wrap.fig .pq-q{font-size:30px}
+#sh-deck .pq-wrap.fig .pq-main{gap:9px}
+#sh-deck .pq-wrap.fig .pq-st{font-size:24px;padding:5px 16px}
+#sh-deck .fc-card svg{height:170px}
+
+#sh-deck .pq-fig{align-content:start;gap:8px}
+#sh-deck .pf-ctl{display:flex;flex-direction:column;gap:8px;width:100%;padding:4px 8px 8px}
+#sh-deck .pf-row{display:grid;grid-template-columns:1fr 1.1fr;gap:12px;align-items:center;font:600 20px var(--f-body);color:#cfe0ee}
+#sh-deck .pf-row input[type=range]{width:100%}
+#sh-deck .pf-read{font-size:22px;line-height:1.3;color:#fff;background:rgba(254,205,11,.09);border-left:4px solid var(--gold);border-radius:10px;padding:8px 14px}
+#sh-deck .pf-read b{color:var(--gold)}
+#sh-deck .qz-fig{flex:none;width:660px;align-self:flex-start}
+#sh-deck .fig-row{display:flex;gap:24px;width:100%;align-items:stretch}
+#sh-deck .fig-row .qz-card{flex:1;min-width:0}
+#sh-deck .pq-fig svg{max-height:420px}
+#sh-deck .pq-wrap.fig{grid-template-columns:1fr 680px}
+
 </style>
 </head>
 <body>
@@ -965,12 +1005,19 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="1" data-title="The U-tube rule" data-init="">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">1 · Density &amp; pressure</div><h2 class="t">The U-tube trick: <em>same level, same pressure</em></h2></div>
-    <div class="sh-body">
+    <div class="sh-body"><div class="ut-wrap">
+  <div class="ut-fig card" data-a><svg viewBox="0 0 640 540" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+<defs><linearGradient id="uw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4aa8ee" stop-opacity=".75"/><stop offset="1" stop-color="#1d6fb5" stop-opacity=".85"/></linearGradient>
+<linearGradient id="uo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fecd0b" stop-opacity=".7"/><stop offset="1" stop-color="#e0a800" stop-opacity=".8"/></linearGradient></defs>
+<rect x="150" y="404" width="80" height="66" fill="url(#uw)"/><rect x="150" y="470" width="290" height="30" fill="url(#uw)"/><rect x="360" y="196" width="80" height="274" fill="url(#uw)"/>
+<rect x="150" y="180" width="80" height="224" fill="url(#uo)"/>
+<path d="M150 140V470Q150 500 180 500H410Q440 500 440 470V140M230 140V470H360V140" fill="none" stroke="#dcecf8" stroke-width="5" stroke-linejoin="round"/>
+<line x1="60" y1="404" x2="470" y2="404" stroke="#ff7a6b" stroke-width="3" stroke-dasharray="10 7"/><text x="295" y="430" fill="#ff7a6b" font-size="18" font-weight="700" text-anchor="middle">same level</text><text x="295" y="452" fill="#ff7a6b" font-size="16" font-weight="700" text-anchor="middle">same pressure</text><text x="190" y="126" fill="#fecd0b" font-size="22" font-weight="700" text-anchor="middle">liquid 1 (ρ₁)</text><text x="400" y="126" fill="#8ab5d6" font-size="22" font-weight="700" text-anchor="middle">liquid 2 (ρ₂)</text><path d="M125 180V404M118 180h14M118 404h14" stroke="#fecd0b" stroke-width="3"/><text x="112" y="300" fill="#fecd0b" font-size="24" font-weight="700" text-anchor="end">h₁</text><path d="M465 196V404M458 196h14M458 404h14" stroke="#8ab5d6" stroke-width="3"/><text x="480" y="312" fill="#8ab5d6" font-size="24" font-weight="700" text-anchor="start">h₂</text></svg></div>
   <div class="col grow" style="justify-content:center;gap:22px">
     <div class="card lg" data-f="1"><div class="lbl">Rule</div><p>In a <b>connected, still liquid</b>, every point at the <b>same horizontal level</b> has the <b>same pressure</b>.</p></div>
     <div class="card lg" data-f="2"><div class="lbl">Method</div><p>Draw a horizontal line through the <b>lowest</b> liquid–liquid surface. Write the pressure on the <b>left</b> and on the <b>right</b>. Set them equal.</p><p class="F" style="font-size:38px;margin-top:6px">P₀ + ρ₁gh₁ = P₀ + ρ₂gh₂</p></div>
     <div class="rem" data-f="3"><b class="k">Remember</b><span>Always measure heights <b>vertically</b> from the common line — never along the tube.</span></div>
-  </div></div>
+  </div></div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Teach this as a recipe: line, left, right, equate. The next question is a past-year NEET problem on exactly this method.</p><p data-k="ask">"Water of height 20 cm balances oil of height 25 cm. Which is denser?" (Water — shorter column.)</p></div>
 </section>
@@ -979,10 +1026,20 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="1" data-title="NEET PYQ 2017: U-tube with oil and water" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">1 · Density &amp; pressure · U-tube with oil and water</div><h2 class="t">NEET PYQ <span class="pq-yr">2017</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A U-tube with both ends open to the atmosphere is partly filled with water. Oil, which is immiscible with water, is poured into one side until it stands at a distance of <b>10 mm above the water level on the other side</b>. Meanwhile the water rises by <b>65 mm</b> from its original level. The density of oil is:</div>
+      <div class="pq-th"><b>Recall</b><span>Same level in a connected liquid → same pressure:&nbsp; <span class="F">ρ₁h₁ = ρ₂h₂</span></span></div>
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>425 kg m<sup>−3</sup></span></button><button data-i="1"><i>B</i><span>800 kg m<sup>−3</sup></span></button><button data-i="2" data-ok="1"><i>C</i><span>928 kg m<sup>−3</sup></span></button><button data-i="3"><i>D</i><span>650 kg m<sup>−3</sup></span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Take the horizontal line at the oil–water boundary on the oil side (B).  On the other arm the water rose 65 mm, so the same level there is 65 + 65 = <b>130 mm</b> of water above it.</div><div class="pq-st" data-f="2"><b>Step 2.</b> Oil column above B: the oil top is 10 mm above the water surface on the other side → height of oil = 65 + 65 + 10 = <b>140 mm</b>.</div><div class="pq-st" data-f="3"><b>Step 3.</b> Equal pressure: <span class="F">ρ<sub>oil</sub> × 140 = ρ<sub>water</sub> × 130</span></div><div class="pq-st" data-f="4"><b>Step 4.</b> <span class="F">ρ<sub>oil</sub> = 1000 × 130 ÷ 140 ≈ <b>928 kg m<sup>−3</sup></b></span></div><div class="pq-st" data-f="5" style="border-color:var(--green)"><b>Answer: C.</b> 928 kg m<sup>−3</sup></div></div>
+      </div>
+      <div class="pq-fig" data-a><svg viewBox="0 0 640 540" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+<defs><linearGradient id="uw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4aa8ee" stop-opacity=".75"/><stop offset="1" stop-color="#1d6fb5" stop-opacity=".85"/></linearGradient>
+<linearGradient id="uo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fecd0b" stop-opacity=".7"/><stop offset="1" stop-color="#e0a800" stop-opacity=".8"/></linearGradient></defs>
+<rect x="150" y="404" width="80" height="66" fill="url(#uw)"/><rect x="150" y="470" width="290" height="30" fill="url(#uw)"/><rect x="360" y="196" width="80" height="274" fill="url(#uw)"/>
+<rect x="150" y="180" width="80" height="224" fill="url(#uo)"/>
+<path d="M150 140V470Q150 500 180 500H410Q440 500 440 470V140M230 140V470H360V140" fill="none" stroke="#dcecf8" stroke-width="5" stroke-linejoin="round"/>
+<line x1="60" y1="404" x2="470" y2="404" stroke="#ff7a6b" stroke-width="3" stroke-dasharray="10 7"/><text x="295" y="430" fill="#ff7a6b" font-size="18" font-weight="700" text-anchor="middle">same level</text><text x="295" y="452" fill="#ff7a6b" font-size="16" font-weight="700" text-anchor="middle">same pressure</text><text x="190" y="126" fill="#fecd0b" font-size="22" font-weight="700" text-anchor="middle">oil (ρ = ?)</text><text x="400" y="126" fill="#8ab5d6" font-size="22" font-weight="700" text-anchor="middle">water (1000)</text><path d="M125 180V404M118 180h14M118 404h14" stroke="#fecd0b" stroke-width="3"/><text x="112" y="300" fill="#fecd0b" font-size="24" font-weight="700" text-anchor="end">140 mm</text><path d="M465 196V404M458 196h14M458 404h14" stroke="#8ab5d6" stroke-width="3"/><text x="480" y="312" fill="#8ab5d6" font-size="24" font-weight="700" text-anchor="start">130 mm</text><line x1="230" y1="300" x2="440" y2="300" stroke="#8ab5d6" stroke-width="2" stroke-dasharray="4 6"/><text x="295" y="322" fill="#8ab5d6" font-size="18" font-weight="700" text-anchor="middle">original level</text><path d="M335 300V196" stroke="#33d6a0" stroke-width="3"/><text x="326" y="262" fill="#33d6a0" font-size="20" font-weight="700" text-anchor="end">65 mm ↑</text><line x1="230" y1="180" x2="360" y2="180" stroke="#33d6a0" stroke-width="2" stroke-dasharray="3 5"/><text x="296" y="172" fill="#33d6a0" font-size="19" font-weight="700" text-anchor="middle">10 mm</text><text x="190" y="528" fill="#8ab5d6" font-size="18" font-weight="700" text-anchor="middle">open to air</text><text x="400" y="528" fill="#8ab5d6" font-size="18" font-weight="700" text-anchor="middle">open to air</text></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1031,6 +1088,37 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
   <div class="sh-src-notes"><p data-k="say">Drag the gas pressure above and below atmospheric. When the open side is higher the gas pressure is bigger than P₀; when it is lower, the gas pressure is smaller.</p><p data-k="ask">"If the liquid is 10 cm lower on the open side, is the gas pressure above or below the atmosphere?" (Below.)</p></div>
 </section>
 
+<!-- ===== f1_acc_th ===== -->
+<section class="sh-slide" data-sec="1" data-title="Why the surface tilts" data-init="">
+  <div class="sh-in">
+    <div class="sh-head" data-a><div class="k">1 · Density &amp; pressure</div><h2 class="t">Why does the surface <em>tilt</em>? The theory</h2></div>
+    <div class="sh-body"><div class="ut-wrap" style="gap:34px">
+  <div class="card" data-a style="flex:none;width:900px"><svg viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+<defs><marker id="ah" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0 0L8 4L0 8z" fill="context-stroke"/></marker></defs>
+<rect x="40" y="170" width="420" height="260" rx="10" fill="none" stroke="#dcecf8" stroke-width="5"/>
+<path d="M45 252 L455 330 L455 425 L45 425z" fill="rgba(47,141,224,.55)"/>
+<path d="M45 252 L455 330" stroke="#fff" stroke-width="4"/>
+<line x1="45" y1="291" x2="455" y2="291" stroke="#8ab5d6" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="250" y="470" text-anchor="middle" fill="#8ab5d6" font-size="22">liquid piles up at the BACK, surface tilts</text>
+<line x1="120" y1="110" x2="360" y2="110" stroke="#33d6a0" stroke-width="7" marker-end="url(#ah)"/><text x="240" y="84" text-anchor="middle" fill="#33d6a0" font-size="26" font-weight="800">container accelerates a →</text>
+<g transform="translate(700,150)">
+<line x1="200" y1="40" x2="200" y2="270" stroke="#8ab5d6" stroke-width="7" marker-end="url(#ah)"/><text x="215" y="170" fill="#8ab5d6" font-size="26" font-weight="800">mg</text>
+<line x1="200" y1="40" x2="60" y2="40" stroke="#ff7a6b" stroke-width="7" marker-end="url(#ah)"/><text x="130" y="26" text-anchor="middle" fill="#ff7a6b" font-size="26" font-weight="800">ma</text>
+<line x1="200" y1="40" x2="62" y2="268" stroke="#fecd0b" stroke-width="6" stroke-dasharray="12 8" marker-end="url(#ah)"/><text x="104" y="170" text-anchor="end" fill="#fecd0b" font-size="24" font-weight="800">net</text>
+<text x="168" y="104" fill="#fecd0b" font-size="26" font-weight="800">θ</text>
+<text x="130" y="320" text-anchor="middle" fill="#dcecf8" font-size="23" font-weight="700">tan θ = ma ÷ mg = a ÷ g</text>
+<text x="130" y="352" text-anchor="middle" fill="#8ab5d6" font-size="19">surface ⟂ net force</text>
+</g></svg></div>
+  <div class="col grow" style="gap:18px;justify-content:center">
+    <div class="card" data-f="1"><div class="lbl">1 · Feel the push</div><p>Sit inside the accelerating container. Every bit of liquid feels a <b>pseudo-force ma</b> backwards, along with its weight <b>mg</b> downwards.</p></div>
+    <div class="card" data-f="2"><div class="lbl">2 · The surface obeys the net force</div><p>A still liquid surface always sets itself <b>⟂ to the net force</b> on it. So it tilts by <span class="F">tan θ = ma ÷ mg = a ÷ g</span></p></div>
+    <div class="card" data-f="3"><div class="lbl">3 · Pressure inside</div><p>Horizontally: <span class="F">ΔP = ρ a l</span> over a length l. Vertically (lift): effective gravity <span class="F">g ± a</span>, so <span class="F">P = hρ(g ± a)</span></p></div>
+  </div>
+</div></div>
+  </div>
+  <div class="sh-src-notes"><p data-k="say">Three clicks. First the pseudo-force, then why the surface tilts (it is perpendicular to the net of mg and ma), then pressure. Students remember this as: the surface is always at right angles to the effective gravity.</p><p data-k="ask">"In a lift moving UP with acceleration a, what is the effective g?" (g + a.)</p></div>
+</section>
+
 <!-- ===== f1_accel ===== -->
 <section class="sh-slide" data-sec="1" data-title="Accelerating liquids" data-init="accel">
   <div class="sh-in">
@@ -1049,20 +1137,24 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="1" data-title="Practice: Barometer in a lift" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">1 · Density &amp; pressure · Barometer in a lift</div><h2 class="t">Practice question <span class="pq-yr pr">NEET-style</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A barometer kept in a lift reads <b>76 cm</b> when the lift is at rest. If the lift goes up with some acceleration, the reading will be:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>76 cm</span></button><button data-i="1"><i>B</i><span>> 76 cm</span></button><button data-i="2" data-ok="1"><i>C</i><span>< 76 cm</span></button><button data-i="3"><i>D</i><span>zero</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> The mercury column stays in balance with atmospheric pressure P₀ (which does not change).</div><div class="pq-st" data-f="2"><b>Step 2.</b> Inside the accelerating lift the effective gravity is <b>g + a</b>.</div><div class="pq-st" data-f="3"><b>Step 3.</b> P₀ = ρ (g + a) h → <b>h = P₀ ÷ ρ(g + a)</b>, which is smaller than before.</div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: C.</b> < 76 cm</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="lift" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Practice question in the NEET pattern — the MTG chapter has no past-year question on this exact point, so this one is not a PYQ. This question appears in the class-notes practice set (Check Your Understanding-1, Q8).</p></div>
 </section>
 
 <!-- ===== Check yourself c1 ===== -->
-<section class="sh-slide" data-sec="1" data-title="Check yourself: pressure" data-init="mqSet" data-set="press">
+<section class="sh-slide" data-sec="1" data-title="Check yourself: pressure" data-init="mqFig" data-set="press">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">1 · Density &amp; pressure · Check yourself</div><h2 class="t">Quick <em>check</em> — pressure</h2></div>
-    <div class="sh-body"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div></div>
+    <div class="sh-body"><div class="fig-row"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div><div class="pq-fig qz-fig" data-a><svg data-pf="depth" viewBox="0 0 600 440"></svg></div></div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Answer on paper first, then click. Most of these are from the Check-Your-Understanding sets in the class notes.</p></div>
 </section>
@@ -1156,20 +1248,24 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="2" data-title="Practice: Hydraulic lift" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">2 · Pascal’s law · Hydraulic lift</div><h2 class="t">Practice question <span class="pq-yr pr">NEET-style</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>The pistons of a hydraulic lift have areas <b>10 cm²</b> and <b>500 cm²</b>. A force of <b>20 N</b> is applied to the small piston. The maximum load that can be lifted is:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>100 N</span></button><button data-i="1"><i>B</i><span>500 N</span></button><button data-i="2" data-ok="1"><i>C</i><span>1000 N</span></button><button data-i="3"><i>D</i><span>2500 N</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Pressure is transmitted equally: <span class="F">F₁/A₁ = F₂/A₂</span></div><div class="pq-st" data-f="2"><b>Step 2.</b> <span class="F">F₂ = F₁ × A₂/A₁ = 20 × 500/10</span></div><div class="pq-st" data-f="3"><b>Step 3.</b> <span class="F">F₂ = 20 × 50 = <b>1000 N</b></span></div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: C.</b> 1000 N</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="hyd" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Practice question in the NEET pattern — the MTG chapter has no past-year question on this exact point, so this one is not a PYQ.</p></div>
 </section>
 
 <!-- ===== Check yourself c2 ===== -->
-<section class="sh-slide" data-sec="2" data-title="Check yourself: Pascal’s law" data-init="mqSet" data-set="pascal">
+<section class="sh-slide" data-sec="2" data-title="Check yourself: Pascal’s law" data-init="mqFig" data-set="pascal">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">2 · Pascal’s law · Check yourself</div><h2 class="t">Quick <em>check</em> — Pascal’s law</h2></div>
-    <div class="sh-body"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div></div>
+    <div class="sh-body"><div class="fig-row"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div><div class="pq-fig qz-fig" data-a><svg data-pf="hyd" viewBox="0 0 600 440"></svg></div></div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Answer on paper first, then click. Most of these are from the Check-Your-Understanding sets in the class notes.</p></div>
 </section>
@@ -1272,10 +1368,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="3" data-title="NEET PYQ NEET-I 2016: Floating body" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">3 · Buoyancy · Floating body</div><h2 class="t">NEET PYQ <span class="pq-yr">NEET-I 2016</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>Two non-mixing liquids of densities <b>ρ</b> and <b>nρ</b> (n &gt; 1) are put in a container. The height of each liquid is <b>h</b>. A solid cylinder of length <b>L</b> and density <b>d</b> is put in this container. The cylinder floats with its axis vertical and length <b>pL</b> (p &lt; 1) in the denser liquid. The density <b>d</b> is equal to:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>{2 + (n − 1)p}ρ</span></button><button data-i="1" data-ok="1"><i>B</i><span>{1 + (n − 1)p}ρ</span></button><button data-i="2"><i>C</i><span>{1 + (n + 1)p}ρ</span></button><button data-i="3"><i>D</i><span>{2 + (n + 1)p}ρ</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Floating: weight of cylinder = total upthrust from <b>both</b> liquids.</div><div class="pq-st" data-f="2"><b>Step 2.</b> Part in the denser liquid: length pL, density nρ. Part in the lighter liquid: length (L − pL), density ρ.</div><div class="pq-st" data-f="3"><b>Step 3.</b> <span class="F">L A d g = pL·A·nρ·g + (L − pL)·A·ρ·g</span></div><div class="pq-st" data-f="4"><b>Step 4.</b> Cancel LAg: <span class="F">d = npρ + ρ(1 − p) = ρ{1 + (n − 1)p}</span></div><div class="pq-st" data-f="5" style="border-color:var(--green)"><b>Answer: B.</b> {1 + (n − 1)p}ρ</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="float" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1322,10 +1422,10 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 </section>
 
 <!-- ===== Check yourself c3 ===== -->
-<section class="sh-slide" data-sec="3" data-title="Check yourself: buoyancy" data-init="mqSet" data-set="buoy">
+<section class="sh-slide" data-sec="3" data-title="Check yourself: buoyancy" data-init="mqFig" data-set="buoy">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">3 · Buoyancy · Check yourself</div><h2 class="t">Quick <em>check</em> — buoyancy</h2></div>
-    <div class="sh-body"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div></div>
+    <div class="sh-body"><div class="fig-row"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div><div class="pq-fig qz-fig" data-a><svg data-pf="float" viewBox="0 0 600 440"></svg></div></div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Answer on paper first, then click. Most of these are from the Check-Your-Understanding sets in the class notes.</p></div>
 </section>
@@ -1419,10 +1519,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="4" data-title="NEET PYQ 2015: Continuity — spray pump" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">4 · Fluid flow · Continuity — spray pump</div><h2 class="t">NEET PYQ <span class="pq-yr">2015</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>The cylindrical tube of a spray pump has radius <b>R</b>, one end of which has <b>n</b> fine holes, each of radius <b>r</b>. If the speed of the liquid in the tube is <b>V</b>, the speed of ejection of the liquid through the holes is:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span><span class="fr"><span>VR²</span><span>n³r²</span></span></span></button><button data-i="1"><i>B</i><span><span class="fr"><span>V²R</span><span>nr</span></span></span></button><button data-i="2"><i>C</i><span><span class="fr"><span>VR²</span><span>n²r²</span></span></span></button><button data-i="3" data-ok="1"><i>D</i><span><span class="fr"><span>VR²</span><span>nr²</span></span></span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Continuity: flow in the tube = flow out of <b>all n</b> holes.</div><div class="pq-st" data-f="2"><b>Step 2.</b> <span class="F">(πR²) V = n (πr²) v</span></div><div class="pq-st" data-f="3"><b>Step 3.</b> <span class="F">v = VR² ÷ (n r²)</span></div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: D.</b> <span class="fr"><span>VR²</span><span>nr²</span></span></div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="spray" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1443,10 +1547,10 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 </section>
 
 <!-- ===== Check yourself c4 ===== -->
-<section class="sh-slide" data-sec="4" data-title="Check yourself: fluid flow" data-init="mqSet" data-set="flow">
+<section class="sh-slide" data-sec="4" data-title="Check yourself: fluid flow" data-init="mqFig" data-set="flow">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">4 · Fluid flow · Check yourself</div><h2 class="t">Quick <em>check</em> — fluid flow</h2></div>
-    <div class="sh-body"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div></div>
+    <div class="sh-body"><div class="fig-row"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div><div class="pq-fig qz-fig" data-a><svg data-pf="pipe" viewBox="0 0 600 440"></svg></div></div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Answer on paper first, then click. Most of these are from the Check-Your-Understanding sets in the class notes.</p></div>
 </section>
@@ -1529,10 +1633,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="5" data-title="NEET PYQ Karnataka NEET 2013: Streamline flow in a pipe" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">5 · Bernoulli’s principle · Streamline flow in a pipe</div><h2 class="t">NEET PYQ <span class="pq-yr">Karnataka NEET 2013</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A fluid is in streamline flow across a horizontal pipe of variable area of cross-section. For this, which of the following statements is correct?</div>
+      
       <div class="pq-o" data-a><button data-i="0" data-ok="1"><i>A</i><span>The velocity is maximum at the narrowest part of the pipe and pressure is maximum at the widest part of the pipe</span></button><button data-i="1"><i>B</i><span>Velocity and pressure both are maximum at the narrowest part of the pipe</span></button><button data-i="2"><i>C</i><span>Velocity and pressure both are maximum at the widest part of the pipe</span></button><button data-i="3"><i>D</i><span>The velocity is minimum at the narrowest part of the pipe and the pressure is minimum at the widest part of the pipe</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Continuity: A v = constant → the <b>narrowest</b> part has the <b>maximum velocity</b>. That rules out (d).</div><div class="pq-st" data-f="2"><b>Step 2.</b> Bernoulli, horizontal pipe: P + ½ρv² = constant → <b>high speed = low pressure</b>.</div><div class="pq-st" data-f="3"><b>Step 3.</b> So the pressure is <b>minimum</b> at the narrowest part and <b>maximum</b> at the widest part. That is option (a).</div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: A.</b> The velocity is maximum at the narrowest part of the pipe and pressure is maximum at the widest part of the pipe</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="pipe" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1571,10 +1679,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="5" data-title="NEET PYQ 2019: Torricelli — rate of flow" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">5 · Bernoulli’s principle · Torricelli — rate of flow</div><h2 class="t">NEET PYQ <span class="pq-yr">2019</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A small hole of area of cross-section <b>2 mm²</b> is present near the bottom of a fully filled open tank of height <b>2 m</b>. Taking g = 10 m s<sup>−2</sup>, the rate of flow of water through the open hole would be nearly:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>6.4 × 10<sup>−6</sup> m³ s<sup>−1</sup></span></button><button data-i="1" data-ok="1"><i>B</i><span>12.6 × 10<sup>−6</sup> m³ s<sup>−1</sup></span></button><button data-i="2"><i>C</i><span>8.9 × 10<sup>−6</sup> m³ s<sup>−1</sup></span></button><button data-i="3"><i>D</i><span>2.23 × 10<sup>−6</sup> m³ s<sup>−1</sup></span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Speed of efflux (Torricelli): <span class="F">v = √(2gh) = √(2 × 10 × 2) = √40 ≈ 6.32 m s<sup>−1</sup></span></div><div class="pq-st" data-f="2"><b>Step 2.</b> Area: 2 mm² = 2 × 10<sup>−6</sup> m²</div><div class="pq-st" data-f="3"><b>Step 3.</b> Rate of flow: <span class="F">Q = A v = 2 × 10<sup>−6</sup> × 6.32 ≈ <b>12.6 × 10<sup>−6</sup> m³ s<sup>−1</sup></b></span></div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: B.</b> 12.6 × 10<sup>−6</sup> m³ s<sup>−1</sup></div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="tank" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1620,10 +1732,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="5" data-title="NEET PYQ 2023: Venturimeter" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">5 · Bernoulli’s principle · Venturimeter</div><h2 class="t">NEET PYQ <span class="pq-yr">2023</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>The venturi-meter works on:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>the principle of parallel axes</span></button><button data-i="1"><i>B</i><span>the principle of perpendicular axes</span></button><button data-i="2"><i>C</i><span>Huygen’s principle</span></button><button data-i="3" data-ok="1"><i>D</i><span>Bernoulli’s principle</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> A venturi-meter measures the <b>rate of flow</b> of a fluid through a pipe.</div><div class="pq-st" data-f="2"><b>Step 2.</b> It makes a narrow throat, so the speed rises and the <b>pressure falls</b> there (continuity + Bernoulli).</div><div class="pq-st" data-f="3"><b>Step 3.</b> The pressure difference gives the flow rate → <b>Bernoulli’s principle</b>.</div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: D.</b> Bernoulli’s principle</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="venturi" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1683,20 +1799,24 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="5" data-title="NEET PYQ 2015 Cancelled: Wind on a roof" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">5 · Bernoulli’s principle · Wind on a roof</div><h2 class="t">NEET PYQ <span class="pq-yr">2015 Cancelled</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A wind with speed <b>40 m s<sup>−1</sup></b> blows parallel to the roof of a house. The area of the roof is <b>250 m²</b>. Assuming that the pressure inside the house is atmospheric pressure, the force exerted by the wind on the roof and the direction of the force will be (ρ<sub>air</sub> = 1.2 kg m<sup>−3</sup>):</div>
+      
       <div class="pq-o" data-a><button data-i="0" data-ok="1"><i>A</i><span>2.4 × 10<sup>5</sup> N, upwards</span></button><button data-i="1"><i>B</i><span>2.4 × 10<sup>5</sup> N, downwards</span></button><button data-i="2"><i>C</i><span>4.8 × 10<sup>5</sup> N, downwards</span></button><button data-i="3"><i>D</i><span>4.8 × 10<sup>5</sup> N, upwards</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Outside the roof the air moves fast: pressure is <b>lower</b>. Inside it is atmospheric, so the net push is <b>upwards</b>.</div><div class="pq-st" data-f="2"><b>Step 2.</b> <span class="F">ΔP = ½ρv² = ½ × 1.2 × 40² = 960 Pa</span></div><div class="pq-st" data-f="3"><b>Step 3.</b> <span class="F">F = ΔP × A = 960 × 250 = <b>2.4 × 10⁵ N</b></span>, directed upwards.</div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: A.</b> 2.4 × 10<sup>5</sup> N, upwards</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="roof" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
 </section>
 
 <!-- ===== Check yourself c5 ===== -->
-<section class="sh-slide" data-sec="5" data-title="Check yourself: Bernoulli" data-init="mqSet" data-set="bern">
+<section class="sh-slide" data-sec="5" data-title="Check yourself: Bernoulli" data-init="mqFig" data-set="bern">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">5 · Bernoulli’s principle · Check yourself</div><h2 class="t">Quick <em>check</em> — Bernoulli</h2></div>
-    <div class="sh-body"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div></div>
+    <div class="sh-body"><div class="fig-row"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div><div class="pq-fig qz-fig" data-a><svg data-pf="tank" viewBox="0 0 600 440"></svg></div></div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Answer on paper first, then click. Most of these are from the Check-Your-Understanding sets in the class notes.</p></div>
 </section>
@@ -1807,10 +1927,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="6" data-title="NEET PYQ Manipur NEET 2023: Stokes drag" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">6 · Viscosity · Stokes drag</div><h2 class="t">NEET PYQ <span class="pq-yr">Manipur NEET 2023</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>The viscous drag acting on a metal sphere of diameter <b>1 mm</b>, falling through a fluid of viscosity <b>0.8 Pa s</b> with a velocity of <b>2 m s<sup>−1</sup></b>, is equal to:</div>
+      
       <div class="pq-o" data-a><button data-i="0" data-ok="1"><i>A</i><span>15 × 10<sup>−3</sup> N</span></button><button data-i="1"><i>B</i><span>30 × 10<sup>−3</sup> N</span></button><button data-i="2"><i>C</i><span>1.5 × 10<sup>−3</sup> N</span></button><button data-i="3"><i>D</i><span>20 × 10<sup>−3</sup> N</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Stokes’ law: <span class="F">F = 6πηrv</span></div><div class="pq-st" data-f="2"><b>Step 2.</b> Radius r = 0.5 mm = 0.5 × 10<sup>−3</sup> m (diameter 1 mm!)</div><div class="pq-st" data-f="3"><b>Step 3.</b> <span class="F">F = 6 × 3.14 × 0.8 × 0.5 × 10⁻³ × 2 ≈ <b>15 × 10<sup>−3</sup> N</b></span></div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: A.</b> 15 × 10<sup>−3</sup> N</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="stokes" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1820,14 +1944,18 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="6" data-title="NEET PYQ 2022: v–t graph in a viscous liquid" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">6 · Viscosity · v–t graph in a viscous liquid</div><h2 class="t">NEET PYQ <span class="pq-yr">2022</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a><svg viewBox="0 0 330 250" style="width:330px;float:right;margin:0 0 0 24px"><path d="M40 20V210H300" fill="none" stroke="#8ab5d6" stroke-width="3"/><text x="18" y="30" fill="#8ab5d6" font-size="22" font-style="italic">v</text><text x="296" y="232" fill="#8ab5d6" font-size="22" font-style="italic">t</text>
 <path d="M40 210L250 40" stroke="#ff7a6b" stroke-width="4" fill="none"/><text x="258" y="40" fill="#ff7a6b" font-size="26" font-weight="700">A</text>
 <path d="M40 210C48 110 90 70 160 64 C210 60 250 62 290 62" stroke="#33d6a0" stroke-width="4" fill="none"/><text x="294" y="58" fill="#33d6a0" font-size="26" font-weight="700">B</text>
 <path d="M92 24C104 120 160 190 262 196" stroke="#fecd0b" stroke-width="4" fill="none"/><text x="66" y="30" fill="#fecd0b" font-size="26" font-weight="700">C</text>
 <path d="M110 22C200 40 270 90 290 160" stroke="#8ab5d6" stroke-width="4" fill="none"/><text x="288" y="188" fill="#8ab5d6" font-size="26" font-weight="700">D</text></svg>A spherical ball is dropped in a long column of a highly viscous liquid. The curve in the graph shown, which represents the speed of the ball (v) as a function of time (t), is:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>A</span></button><button data-i="1" data-ok="1"><i>B</i><span>B</span></button><button data-i="2"><i>C</i><span>C</span></button><button data-i="3"><i>D</i><span>D</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> The ball starts from <b>rest</b> → the curve must begin at v = 0 (this rules out C and D).</div><div class="pq-st" data-f="2"><b>Step 2.</b> Weight pulls it down; viscous drag grows with speed. So the speed <b>rises</b>, but more and more slowly (the acceleration shrinks).</div><div class="pq-st" data-f="3"><b>Step 3.</b> When weight = upthrust + drag, the speed becomes <b>constant</b> — the terminal velocity. A straight line (A) would mean constant acceleration — impossible. The curve that rises and flattens is <b>B</b>.</div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: B.</b> B</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="vt" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids). The graph here is redrawn from the printed figure (A straight line, B rising then flat, C and D falling curves).</p></div>
@@ -1837,10 +1965,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="6" data-title="NEET PYQ 2021: Viscous force at terminal velocity" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">6 · Viscosity · Viscous force at terminal velocity</div><h2 class="t">NEET PYQ <span class="pq-yr">2021</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>The velocity of a small ball of mass <b>M</b> and density <b>d</b>, when dropped in a container filled with glycerine, becomes constant after some time. If the density of glycerine is <b>d/2</b>, then the viscous force acting on the ball will be:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>2Mg</span></button><button data-i="1" data-ok="1"><i>B</i><span><span class="fr"><span>Mg</span><span>2</span></span></span></button><button data-i="2"><i>C</i><span>Mg</span></button><button data-i="3"><i>D</i><span><span class="fr"><span>3</span><span>2</span></span>Mg</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Constant velocity means <b>net force = 0</b>: weight = upthrust + viscous force.</div><div class="pq-st" data-f="2"><b>Step 2.</b> Upthrust = weight of the displaced glycerine = (M/d) × (d/2) × g = <b>Mg/2</b>.</div><div class="pq-st" data-f="3"><b>Step 3.</b> Viscous force = Mg − Mg/2 = <b>Mg/2</b>.</div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: B.</b> <span class="fr"><span>Mg</span><span>2</span></span></div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="term" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1850,10 +1982,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="6" data-title="NEET PYQ Odisha NEET 2019: Ratio of terminal velocities" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">6 · Viscosity · Ratio of terminal velocities</div><h2 class="t">NEET PYQ <span class="pq-yr">Odisha NEET 2019</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>Two small spherical metal balls, having equal masses, are made from materials of densities <b>ρ₁</b> and <b>ρ₂ (ρ₁ = 8ρ₂)</b> and have radii of <b>1 mm</b> and <b>2 mm</b>, respectively. They are made to fall vertically (from rest) in a viscous medium whose coefficient of viscosity equals <b>η</b> and whose density is <b>0.1 ρ₂</b>. The ratio of their terminal velocities would be:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span><span class="fr"><span>79</span><span>72</span></span></span></button><button data-i="1"><i>B</i><span><span class="fr"><span>19</span><span>36</span></span></span></button><button data-i="2"><i>C</i><span><span class="fr"><span>39</span><span>72</span></span></span></button><button data-i="3" data-ok="1"><i>D</i><span><span class="fr"><span>79</span><span>36</span></span></span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Terminal velocity: <span class="F">v<sub>t</sub> ∝ r² (ρ − σ)</span>, with σ = 0.1ρ₂.</div><div class="pq-st" data-f="2"><b>Step 2.</b> Ball 1: r = 1, ρ = 8ρ₂ → <span class="F">1² × (8 − 0.1)ρ₂ = 7.9ρ₂</span></div><div class="pq-st" data-f="3"><b>Step 3.</b> Ball 2: r = 2, ρ = ρ₂ → <span class="F">2² × (1 − 0.1)ρ₂ = 3.6ρ₂</span></div><div class="pq-st" data-f="4"><b>Step 4.</b> <span class="F">v₁ ÷ v₂ = 7.9 ÷ 3.6 = <b>79 ÷ 36</b></span></div><div class="pq-st" data-f="5" style="border-color:var(--green)"><b>Answer: D.</b> <span class="fr"><span>79</span><span>36</span></span></div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="race" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1863,20 +1999,24 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="6" data-title="NEET PYQ 2018: Heat produced at terminal velocity" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">6 · Viscosity · Heat produced at terminal velocity</div><h2 class="t">NEET PYQ <span class="pq-yr">2018</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A small sphere of radius <b>r</b> falls from rest in a viscous liquid. As a result, heat is produced due to viscous force. The rate of production of heat when the sphere attains its terminal velocity is proportional to:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>r³</span></button><button data-i="1"><i>B</i><span>r²</span></button><button data-i="2" data-ok="1"><i>C</i><span>r⁵</span></button><button data-i="3"><i>D</i><span>r⁴</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Heat per second = power = viscous force × speed = <span class="F">6πηr v<sub>t</sub> × v<sub>t</sub> ∝ r v<sub>t</sub>²</span></div><div class="pq-st" data-f="2"><b>Step 2.</b> And <span class="F">v<sub>t</sub> ∝ r²</span>, so <span class="F">v<sub>t</sub>² ∝ r⁴</span></div><div class="pq-st" data-f="3"><b>Step 3.</b> Rate of heat ∝ r × r⁴ = <b>r⁵</b></div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: C.</b> r⁵</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="heat" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
 </section>
 
 <!-- ===== Check yourself c6 ===== -->
-<section class="sh-slide" data-sec="6" data-title="Check yourself: viscosity" data-init="mqSet" data-set="visc">
+<section class="sh-slide" data-sec="6" data-title="Check yourself: viscosity" data-init="mqFig" data-set="visc">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">6 · Viscosity · Check yourself</div><h2 class="t">Quick <em>check</em> — viscosity</h2></div>
-    <div class="sh-body"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div></div>
+    <div class="sh-body"><div class="fig-row"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div><div class="pq-fig qz-fig" data-a><svg data-pf="term" viewBox="0 0 600 440"></svg></div></div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Answer on paper first, then click. Most of these are from the Check-Your-Understanding sets in the class notes.</p></div>
 </section>
@@ -1922,44 +2062,65 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="7" data-title="Surface tension defined" data-init="">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">7 · Surface tension</div><h2 class="t">Surface tension: <em>force per unit length</em></h2></div>
-    <div class="sh-body">
-  <div class="col grow" style="justify-content:center;gap:22px">
-    <div class="card lg" data-f="1" style="text-align:center"><div class="F big">T = <span class="fr"><span>F</span><span>l</span></span></div><p>Force acting <b>perpendicular to an imaginary line</b> of length l on the liquid surface, in the plane of the surface &nbsp;·&nbsp; unit <b>N m⁻¹</b> (or dyne cm⁻¹)</p></div>
-    <div class="g3">
-      <div class="card" data-f="2"><h3><small>Water at room temperature</small>≈ 0.07 N m⁻¹</h3><p style="font-size:24px">= 70 dyne cm⁻¹</p></div>
-      <div class="card" data-f="3"><h3><small>It is a</small>Scalar</h3><p style="font-size:24px">and independent of the surface area</p></div>
-      <div class="card" data-f="4"><h3><small>It decreases with</small>Temperature, soap, dust</h3><p style="font-size:24px">Soap, detergent, heat: ↓. Salt dissolved: ↑</p></div>
-    </div>
-  </div></div>
+    <div class="sh-body"><div class="df-wrap">
+  <div class="df-fig card" data-a><svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+<defs><radialGradient id="pw" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#4aa8ee" stop-opacity=".75"/><stop offset="1" stop-color="#14588f" stop-opacity=".9"/></radialGradient></defs>
+<rect x="20" y="20" width="760" height="480" rx="30" fill="url(#pw)" stroke="#8ab5d6" stroke-width="3"/>
+<ellipse cx="400" cy="260" rx="330" ry="170" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2"/><ellipse cx="400" cy="260" rx="250" ry="120" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="2"/>
+<circle cx="110" cy="120" r="26" fill="rgba(255,255,255,.14)" stroke="#dcecf8" stroke-width="2"/><circle cx="101" cy="111" r="6" fill="#fff" opacity=".8"/><circle cx="170" cy="330" r="18" fill="rgba(255,255,255,.14)" stroke="#dcecf8" stroke-width="2"/><circle cx="164" cy="324" r="4" fill="#fff" opacity=".8"/><circle cx="90" cy="260" r="12" fill="rgba(255,255,255,.14)" stroke="#dcecf8" stroke-width="2"/><circle cx="86" cy="256" r="3" fill="#fff" opacity=".8"/><circle cx="660" cy="110" r="20" fill="rgba(255,255,255,.14)" stroke="#dcecf8" stroke-width="2"/><circle cx="653" cy="103" r="4" fill="#fff" opacity=".8"/><circle cx="710" cy="240" r="30" fill="rgba(255,255,255,.14)" stroke="#dcecf8" stroke-width="2"/><circle cx="700" cy="230" r="7" fill="#fff" opacity=".8"/><circle cx="640" cy="350" r="14" fill="rgba(255,255,255,.14)" stroke="#dcecf8" stroke-width="2"/><circle cx="635" cy="345" r="3" fill="#fff" opacity=".8"/><circle cx="560" cy="80" r="12" fill="rgba(255,255,255,.14)" stroke="#dcecf8" stroke-width="2"/><circle cx="556" cy="76" r="3" fill="#fff" opacity=".8"/><circle cx="250" cy="90" r="10" fill="rgba(255,255,255,.14)" stroke="#dcecf8" stroke-width="2"/><circle cx="246" cy="86" r="3" fill="#fff" opacity=".8"/><circle cx="300" cy="400" r="16" fill="rgba(255,255,255,.14)" stroke="#dcecf8" stroke-width="2"/><circle cx="294" cy="394" r="4" fill="#fff" opacity=".8"/><circle cx="520" cy="410" r="22" fill="rgba(255,255,255,.14)" stroke="#dcecf8" stroke-width="2"/><circle cx="512" cy="402" r="5" fill="#fff" opacity=".8"/>
+<line x1="400" y1="70" x2="400" y2="450" stroke="#fecd0b" stroke-width="5" stroke-dasharray="14 10"/>
+<text x="414" y="64" fill="#fecd0b" font-size="24" font-weight="800">imaginary line, length l</text>
+<g stroke="#ff7a6b" stroke-width="7" fill="#ff7a6b"><path d="M392 210H290"/><path d="M290 196l-34 14 34 14z"/><path d="M408 310H510"/><path d="M510 296l34 14-34 14z"/></g>
+<text x="274" y="252" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">F</text><text x="274" y="278" text-anchor="middle" fill="#ffd5cf" font-size="18">pull by the left part</text>
+<text x="526" y="352" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">F</text><text x="526" y="378" text-anchor="middle" fill="#ffd5cf" font-size="18">pull by the right part</text>
+<text x="400" y="480" text-anchor="middle" fill="#dcecf8" font-size="21" font-weight="700">top view of water · F ⟂ the line, lying in the surface</text>
+</svg></div>
+  <div class="col grow" style="justify-content:center;gap:16px">
+    <div class="card lg" data-f="1" style="text-align:center"><div class="F big">T = <span class="fr"><span>F</span><span>l</span></span></div><p>Force on an imaginary line of length l, <b>⟂ to the line</b>, in the plane of the surface &nbsp;·&nbsp; unit <b>N m⁻¹</b></p></div>
+    <div class="card" data-f="2"><h3><small>Water at room temperature</small>≈ 0.07 N m⁻¹ &nbsp;<span style="font-size:22px;color:#8ab5d6">(70 dyne cm⁻¹)</span></h3></div>
+    <div class="card" data-f="3"><h3><small>It is a</small>Scalar, independent of the area</h3></div>
+    <div class="card" data-f="4"><h3><small>It decreases with</small>Heat, soap, detergent</h3><p style="font-size:22px">Dissolved salt <b>increases</b> it.</p></div>
   </div>
-  <div class="sh-src-notes"><p data-k="say">Four clicks. Surface tension falls as temperature rises. Soap solution has lower surface tension than pure water — that is why it spreads and cleans.</p><p data-k="ask">"Water has T = 0.07 N m⁻¹. What force acts across a 10 cm line on the surface?" (0.007 N.)</p></div>
+</div></div>
+  </div>
+  <div class="sh-src-notes"><p data-k="say">Four clicks. Point at the picture: the surface is like a stretched sheet, and the two halves pull on each other across any line you imagine. Surface tension falls as temperature rises. Soap solution has lower surface tension than pure water, which is why it spreads and cleans.</p><p data-k="ask">"Water has T = 0.07 N m⁻¹. What force acts across a 10 cm line on the surface?" (0.007 N.)</p></div>
 </section>
 
 <!-- ===== f7_force ===== -->
 <section class="sh-slide" data-sec="7" data-title="Force to pull things off water" data-init="">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">7 · Surface tension</div><h2 class="t">Force to <em>pull</em> an object off the water surface</h2></div>
-    <div class="sh-body">
-  <div class="g3" style="width:100%;align-content:center">
-    <div class="card lg" data-f="1"><h3><small>Wire of length l</small>〰️</h3><p class="F" style="font-size:40px">F = 2 l T</p><p style="font-size:22px">two sides of the film</p></div>
-    <div class="card lg" data-f="2"><h3><small>Rectangular plate l × b</small>▭</h3><p class="F" style="font-size:40px">F = 2(l + b)T</p></div>
-    <div class="card lg" data-f="3"><h3><small>Circular ring, radius r</small>◯</h3><p class="F" style="font-size:40px">F = 4π r T</p><p style="font-size:22px">inner + outer circumference</p></div>
-    <div class="card lg" data-f="4"><h3><small>Solid circular disc, radius R</small>●</h3><p class="F" style="font-size:40px">F = 2π R T</p><p style="font-size:22px">one circumference only</p></div>
-    <div class="card lg" data-f="5"><h3><small>Disc with a hole</small>◎</h3><p class="F" style="font-size:40px">F = 2π(R + r)T</p></div>
-    <div class="card lg" data-f="6"><h3><small>Two glass plates, film thickness d</small>▤</h3><p class="F" style="font-size:40px">F = 2TA/d</p></div>
-  </div></div>
+    <div class="sh-body"><div class="g3" style="width:100%;align-content:center;gap:20px"><div class="card fc-card" data-f="1"><svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect x="0" y="0" width="300" height="150" rx="12" fill="rgba(47,141,224,.28)"/><line x1="60" y1="70" x2="240" y2="70" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M60 52h180M60 88h180" stroke="#ff7a6b" stroke-width="2" stroke-dasharray="4 4"/><text x="150" y="40" text-anchor="middle" fill="#fecd0b" font-size="22" font-weight="800">l</text><text x="150" y="140" text-anchor="middle" fill="#8ab5d6" font-size="19" font-weight="600">wire (film on both sides)</text></svg><h3><small>Wire of length l</small></h3><p class="F" style="font-size:38px">F = 2 l T</p><p style="font-size:22px">two sides of the film</p></div><div class="card fc-card" data-f="2"><svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect x="0" y="0" width="300" height="150" rx="12" fill="rgba(47,141,224,.28)"/><rect x="70" y="35" width="160" height="70" fill="#c9d6e2" stroke="#fff" stroke-width="3"/><text x="150" y="28" text-anchor="middle" fill="#fecd0b" font-size="20" font-weight="800">l</text><text x="244" y="76" fill="#fecd0b" font-size="20" font-weight="800">b</text><text x="150" y="140" text-anchor="middle" fill="#8ab5d6" font-size="19" font-weight="600">plate l × b (rim = 2(l+b))</text></svg><h3><small>Rectangular plate l × b</small></h3><p class="F" style="font-size:38px">F = 2(l + b)T</p><p style="font-size:22px">whole rim touches the water</p></div><div class="card fc-card" data-f="3"><svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect x="0" y="0" width="300" height="150" rx="12" fill="rgba(47,141,224,.28)"/><circle cx="150" cy="68" r="46" fill="none" stroke="#fff" stroke-width="9"/><circle cx="150" cy="68" r="51" fill="none" stroke="#ff7a6b" stroke-width="2" stroke-dasharray="4 4"/><circle cx="150" cy="68" r="41" fill="none" stroke="#ff7a6b" stroke-width="2" stroke-dasharray="4 4"/><path d="M150 68L196 68" stroke="#fecd0b" stroke-width="3"/><text x="173" y="60" text-anchor="middle" fill="#fecd0b" font-size="18" font-weight="800">r</text><text x="150" y="140" text-anchor="middle" fill="#8ab5d6" font-size="19" font-weight="600">thin ring (inner + outer)</text></svg><h3><small>Circular ring, radius r</small></h3><p class="F" style="font-size:38px">F = 4π r T</p><p style="font-size:22px">inner + outer circumference</p></div><div class="card fc-card" data-f="4"><svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect x="0" y="0" width="300" height="150" rx="12" fill="rgba(47,141,224,.28)"/><circle cx="150" cy="68" r="48" fill="#c9d6e2" stroke="#fff" stroke-width="3"/><path d="M150 68L198 68" stroke="#0b2a46" stroke-width="3"/><text x="174" y="60" text-anchor="middle" fill="#0b2a46" font-size="18" font-weight="800">R</text><text x="150" y="140" text-anchor="middle" fill="#8ab5d6" font-size="19" font-weight="600">solid disc (one rim)</text></svg><h3><small>Solid circular disc, radius R</small></h3><p class="F" style="font-size:38px">F = 2π R T</p><p style="font-size:22px">one circumference only</p></div><div class="card fc-card" data-f="5"><svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect x="0" y="0" width="300" height="150" rx="12" fill="rgba(47,141,224,.28)"/><circle cx="150" cy="68" r="50" fill="#c9d6e2" stroke="#fff" stroke-width="3"/><circle cx="150" cy="68" r="24" fill="#1d5f9e" stroke="#fff" stroke-width="3"/><text x="150" y="74" text-anchor="middle" fill="#fff" font-size="16" font-weight="800">r</text><text x="212" y="40" fill="#fecd0b" font-size="16" font-weight="800">R</text><text x="150" y="140" text-anchor="middle" fill="#8ab5d6" font-size="19" font-weight="600">disc with a hole (outer + inner)</text></svg><h3><small>Disc with a hole</small></h3><p class="F" style="font-size:38px">F = 2π(R + r)T</p><p style="font-size:22px">outer + inner edge</p></div><div class="card fc-card" data-f="6"><svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect x="0" y="0" width="300" height="150" rx="12" fill="rgba(47,141,224,.28)"/><rect x="50" y="40" width="200" height="12" fill="#c9d6e2" stroke="#fff" stroke-width="2"/><rect x="50" y="80" width="200" height="12" fill="#c9d6e2" stroke="#fff" stroke-width="2"/><rect x="50" y="52" width="200" height="28" fill="rgba(47,141,224,.8)"/><path d="M262 52V80" stroke="#fecd0b" stroke-width="3"/><text x="276" y="72" fill="#fecd0b" font-size="18" font-weight="800">d</text><path d="M150 40V12" stroke="#fecd0b" stroke-width="4"/><path d="M140 22l10-14 10 14z" fill="#fecd0b"/><text x="150" y="140" text-anchor="middle" fill="#8ab5d6" font-size="19" font-weight="600">two plates, liquid film between</text></svg><h3><small>Two glass plates, film thickness d</small></h3><p class="F" style="font-size:38px">F = 2TA/d</p><p style="font-size:22px">A = area of the film</p></div></div></div>
   </div>
-  <div class="sh-src-notes"><p data-k="say">Six patterns, one per click. Memory trick: a wire or plate pulls out a film with TWO surfaces (the “2”). A solid disc has only one edge touching the water, so 2πRT. This is in addition to the weight of the object.</p><p data-k="ask">"A disc of radius R is lifted off water. What is the extra force?" (2πRT.)</p></div>
+  <div class="sh-src-notes"><p data-k="say">Six patterns, one per click, each with its picture. Memory trick: a wire or plate pulls out a film with TWO surfaces (the 2). A solid disc has only one edge touching the water, so 2πRT. This is in addition to the weight of the object.</p><p data-k="ask">"A disc of radius R is lifted off water. What is the extra force?" (2πRT.)</p></div>
 </section>
 
 <!-- ===== PYQ p13 ===== -->
 <section class="sh-slide" data-sec="7" data-title="NEET PYQ 2024: Force on a disc" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">7 · Surface tension · Force on a disc</div><h2 class="t">NEET PYQ <span class="pq-yr">2024</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A thin flat circular disc of radius <b>4.5 cm</b> is placed gently over the surface of water. If the surface tension of water is <b>0.07 N m<sup>−1</sup></b>, then the excess force required to take it away from the surface is:</div>
+      <div class="pq-th"><b>Recall</b><span>Solid disc: one rim touches the water &nbsp;→&nbsp; <span class="F">F = 2πRT</span></span></div>
       <div class="pq-o" data-a><button data-i="0" data-ok="1"><i>A</i><span>19.8 mN</span></button><button data-i="1"><i>B</i><span>198 N</span></button><button data-i="2"><i>C</i><span>1.98 mN</span></button><button data-i="3"><i>D</i><span>99 N</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> For a solid disc only <b>one circular edge</b> touches the water: <span class="F">F = 2πRT</span></div><div class="pq-st" data-f="2"><b>Step 2.</b> <span class="F">F = 2 × 3.14 × 0.045 × 0.07 ≈ 0.0198 N</span></div><div class="pq-st" data-f="3"><b>Step 3.</b> <b>F ≈ 19.8 mN</b> (milli-newton!)</div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: A.</b> 19.8 mN</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+<defs><linearGradient id="dw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4aa8ee" stop-opacity=".7"/><stop offset="1" stop-color="#1d6fb5" stop-opacity=".8"/></linearGradient></defs>
+<rect x="30" y="200" width="500" height="190" rx="14" fill="url(#dw)"/>
+<path d="M30 200H530" stroke="#dcecf8" stroke-width="3"/>
+<rect x="150" y="186" width="260" height="14" rx="5" fill="#c9d6e2" stroke="#fff" stroke-width="2"/>
+<text x="280" y="168" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">thin disc, radius R = 4.5 cm</text>
+<path d="M150 200q-30 4 -52 18" stroke="#ff7a6b" stroke-width="4" fill="none"/><path d="M98 218l14-4-6 12z" fill="#ff7a6b" stroke="#ff7a6b"/>
+<path d="M410 200q30 4 52 18" stroke="#ff7a6b" stroke-width="4" fill="none"/><path d="M462 218l-14-4 6 12z" fill="#ff7a6b" stroke="#ff7a6b"/>
+<text x="40" y="250" text-anchor="start" fill="#ff7a6b" font-size="21" font-weight="700">T pulls</text><text x="40" y="274" text-anchor="start" fill="#ff7a6b" font-size="21" font-weight="700">the disc</text>
+<text x="520" y="250" text-anchor="end" fill="#ff7a6b" font-size="21" font-weight="700">along the</text><text x="520" y="274" text-anchor="end" fill="#ff7a6b" font-size="21" font-weight="700">rim: 2πR</text>
+<path d="M280 150V96" stroke="#fecd0b" stroke-width="6"/><path d="M262 108l18-26 18 26z" fill="#fecd0b"/>
+<text x="300" y="112" fill="#fecd0b" font-size="22" font-weight="800">F (to lift off)</text>
+<text x="280" y="360" text-anchor="middle" fill="#dcecf8" font-size="22" font-weight="700">only ONE edge touches water</text>
+<text x="280" y="392" text-anchor="middle" fill="#8ab5d6" font-size="21">T = 0.07 N m⁻¹</text>
+</svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1969,10 +2130,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="7" data-title="NEET PYQ Manipur NEET 2023: Scalar or vector?" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">7 · Surface tension · Scalar or vector?</div><h2 class="t">NEET PYQ <span class="pq-yr">Manipur NEET 2023</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>Which of the following statements is <b>not true</b>?</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>Coefficient of viscosity is a scalar quantity</span></button><button data-i="1"><i>B</i><span>Surface tension is a scalar quantity</span></button><button data-i="2" data-ok="1"><i>C</i><span>Pressure is a vector quantity</span></button><button data-i="3"><i>D</i><span>Relative density is a scalar quantity</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Coefficient of viscosity: just a number with a unit → scalar ✔</div><div class="pq-st" data-f="2"><b>Step 2.</b> Surface tension (force per length, but with no single direction defined) → scalar ✔ (as per the standard notes)</div><div class="pq-st" data-f="3"><b>Step 3.</b> Relative density: ratio of two densities → scalar ✔</div><div class="pq-st" data-f="4"><b>Step 4.</b> <b>Pressure acts in all directions</b> at a point → it is a <b>scalar</b>. So “pressure is a vector” is the false statement.</div><div class="pq-st" data-f="5" style="border-color:var(--green)"><b>Answer: C.</b> Pressure is a vector quantity</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="pvec" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -1999,10 +2164,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="7" data-title="NEET PYQ 2023: Energy to blow a soap bubble" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">7 · Surface tension · Energy to blow a soap bubble</div><h2 class="t">NEET PYQ <span class="pq-yr">2023</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>The amount of energy required to form a soap bubble of radius <b>2 cm</b> from a soap solution is nearly (surface tension of soap solution = 0.03 N m<sup>−1</sup>):</div>
+      
       <div class="pq-o" data-a><button data-i="0" data-ok="1"><i>A</i><span>3.01 × 10<sup>−4</sup> J</span></button><button data-i="1"><i>B</i><span>50.1 × 10<sup>−4</sup> J</span></button><button data-i="2"><i>C</i><span>30.16 × 10<sup>−4</sup> J</span></button><button data-i="3"><i>D</i><span>5.06 × 10<sup>−4</sup> J</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> A soap bubble has <b>two</b> surfaces: total area = 2 × 4πr²</div><div class="pq-st" data-f="2"><b>Step 2.</b> <span class="F">W = T × ΔA = 0.03 × 2 × 4π × (0.02)²</span></div><div class="pq-st" data-f="3"><b>Step 3.</b> <span class="F">W = 0.03 × 8π × 4 × 10⁻⁴ ≈ <b>3.01 × 10<sup>−4</sup> J</b></span></div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: A.</b> 3.01 × 10<sup>−4</sup> J</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="bub_e" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -2012,10 +2181,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="7" data-title="NEET PYQ NEET-II 2016: Work to stretch a film" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">7 · Surface tension · Work to stretch a film</div><h2 class="t">NEET PYQ <span class="pq-yr">NEET-II 2016</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A rectangular film of liquid is extended from <b>(4 cm × 2 cm)</b> to <b>(5 cm × 4 cm)</b>. If the work done is <b>3 × 10<sup>−4</sup> J</b>, the value of the surface tension of the liquid is:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>0.250 N m<sup>−1</sup></span></button><button data-i="1" data-ok="1"><i>B</i><span>0.125 N m<sup>−1</sup></span></button><button data-i="2"><i>C</i><span>0.2 N m<sup>−1</sup></span></button><button data-i="3"><i>D</i><span>8.0 N m<sup>−1</sup></span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Area increase (one face): 5 × 4 − 4 × 2 = 20 − 8 = 12 cm² = 12 × 10<sup>−4</sup> m²</div><div class="pq-st" data-f="2"><b>Step 2.</b> A liquid film has <b>two</b> surfaces → total ΔA = 2 × 12 × 10<sup>−4</sup> = 24 × 10<sup>−4</sup> m²</div><div class="pq-st" data-f="3"><b>Step 3.</b> <span class="F">T = W ÷ ΔA = 3 × 10⁻⁴ ÷ 24 × 10⁻⁴ = <b>0.125 N m<sup>−1</sup></b></span></div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: B.</b> 0.125 N m<sup>−1</sup></div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="film" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -2027,7 +2200,7 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
     <div class="sh-head" data-a><div class="k">7 · Surface tension</div><h2 class="t">Break a drop into many — <em>energy is needed</em></h2></div>
     <div class="sh-body"><div class="card grow sim-card" data-a><svg class="dr-svg sim-svg" viewBox="0 0 1000 560"></svg></div>
   <div class="col sim-ctl" data-a>
-    <div class="card"><div class="lbl"><span><span class="tag neet">Live</span>&nbsp; Split into n drops</span><output class="dr-nv"></output></div><input type="range" class="dr-n" min="1" max="10" step="1" value="1"></div>
+    <div class="card"><div class="lbl"><span><span class="tag neet">Live</span>&nbsp; Split into n drops</span><output class="dr-nv"></output></div><input type="range" class="dr-n" min="1" max="10" step="1" value="3"></div>
     <div class="rv-read"><div class="rv-st"><small>Radius of each</small><b class="dr-r"></b></div><div class="rv-st"><small>Total surface area</small><b class="dr-a"></b></div></div>
     <div class="rv-read"><div class="rv-st res"><small>Work needed W = 4πR²T(n<sup>1/3</sup> − 1)</small><b class="dr-w"></b><span>for a water drop of R = 1 cm</span></div></div>
     <div class="callout" style="font-size:24px">Splitting <b>absorbs</b> energy. Merging n small drops into one big drop <b>releases</b> energy (the surface shrinks).</div>
@@ -2040,10 +2213,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="7" data-title="NEET PYQ 2014: Drops coalescing" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">7 · Surface tension · Drops coalescing</div><h2 class="t">NEET PYQ <span class="pq-yr">2014</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A certain number of spherical drops of a liquid of radius <b>r</b> coalesce to form a single drop of radius <b>R</b> and volume <b>V</b>. If <b>T</b> is the surface tension of the liquid, then:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>energy = 4VT(1/r − 1/R) is released</span></button><button data-i="1"><i>B</i><span>energy = 3VT(1/r + 1/R) is absorbed</span></button><button data-i="2" data-ok="1"><i>C</i><span>energy = 3VT(1/r − 1/R) is released</span></button><button data-i="3"><i>D</i><span>energy is neither released nor absorbed</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Merging reduces the total surface area → energy is <b>released</b>. (rules out b and d)</div><div class="pq-st" data-f="2"><b>Step 2.</b> Number of drops n: n r³ = R³. Energy released = T × (n·4πr² − 4πR²) = 4πT (R³/r − R²)</div><div class="pq-st" data-f="3"><b>Step 3.</b> Volume V = (4/3)πR³ → 4πR³ = 3V. So energy = <span class="F">3VT(1/r − 1/R)</span> <b>released</b>.</div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: C.</b> energy = 3VT(1/r − 1/R) is released</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="coal" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -2095,10 +2272,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="7" data-title="NEET PYQ 2022: Soap bubble expands" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">7 · Surface tension · Soap bubble expands</div><h2 class="t">NEET PYQ <span class="pq-yr">2022</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>If a soap bubble expands, the pressure inside the bubble:</div>
+      
       <div class="pq-o" data-a><button data-i="0" data-ok="1"><i>A</i><span>decreases</span></button><button data-i="1"><i>B</i><span>increases</span></button><button data-i="2"><i>C</i><span>remains the same</span></button><button data-i="3"><i>D</i><span>is equal to the atmospheric pressure</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Excess pressure inside a soap bubble: <span class="F">ΔP = 4T/R</span></div><div class="pq-st" data-f="2"><b>Step 2.</b> As the bubble <b>expands</b>, R increases → ΔP <b>decreases</b>. So the pressure inside <b>decreases</b>.</div><div class="pq-st" data-f="3" style="border-color:var(--green)"><b>Answer: A.</b> decreases</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="bub_p" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -2108,20 +2289,24 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="7" data-title="NEET PYQ 2019: Bubble pressure and depth" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">7 · Surface tension · Bubble pressure and depth</div><h2 class="t">NEET PYQ <span class="pq-yr">2019</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A soap bubble, having radius of <b>1 mm</b>, is blown from a detergent solution having a surface tension of <b>2.5 × 10<sup>−2</sup> N m<sup>−1</sup></b>. The pressure inside the bubble equals at a point <b>Z₀</b> below the free surface of water in a container. Taking g = 10 m s<sup>−2</sup>, density of water = 10³ kg m<sup>−3</sup>, the value of Z₀ is:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>0.5 cm</span></button><button data-i="1"><i>B</i><span>100 cm</span></button><button data-i="2"><i>C</i><span>10 cm</span></button><button data-i="3" data-ok="1"><i>D</i><span>1 cm</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> Pressure inside the soap bubble = <span class="F">P₀ + 4T/R</span>. Excess = 4 × 2.5 × 10⁻² ÷ 10⁻³ = <b>100 Pa</b>.</div><div class="pq-st" data-f="2"><b>Step 2.</b> Pressure at depth Z₀ in water = <span class="F">P₀ + ρ g Z₀</span></div><div class="pq-st" data-f="3"><b>Step 3.</b> Equate the excess: ρ g Z₀ = 100 → <span class="F">Z₀ = 100 ÷ (10³ × 10) = 0.01 m = <b>1 cm</b></span></div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: D.</b> 1 cm</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="depth" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
 </section>
 
 <!-- ===== Check yourself c7 ===== -->
-<section class="sh-slide" data-sec="7" data-title="Check yourself: surface tension" data-init="mqSet" data-set="st">
+<section class="sh-slide" data-sec="7" data-title="Check yourself: surface tension" data-init="mqFig" data-set="st">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">7 · Surface tension · Check yourself</div><h2 class="t">Quick <em>check</em> — surface tension</h2></div>
-    <div class="sh-body"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div></div>
+    <div class="sh-body"><div class="fig-row"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div><div class="pq-fig qz-fig" data-a><svg data-pf="bub_p" viewBox="0 0 600 440"></svg></div></div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Answer on paper first, then click. Most of these are from the Check-Your-Understanding sets in the class notes.</p></div>
 </section>
@@ -2130,7 +2315,7 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide story" data-sec="8" data-title="Episode 8: The towel that climbed" data-init="">
   <div class="sh-in st-in">
     <div class="st-ep" data-a><b>Episode 8</b><span>Last time: A liquid surface acts like a stretched skin.</span></div>
-    <div class="st-scene" data-a>🧺💧</div>
+    <div class="st-scene" data-a>🧻💧</div>
     <h2 class="st-h" data-f="1">Dip the corner of a dry towel into a bucket of water. Wait a minute. The water <em>climbs</em> up the cloth — against gravity, with nobody pulling.</h2>
     <p class="st-p" data-f="2">The wick of a diya does the same with oil. So does a blotting paper with ink, or the sugar cube that drinks your tea.</p>
     <div class="st-q" data-f="3">What makes a liquid <em>climb</em> through thin gaps?</div>
@@ -2138,32 +2323,42 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
   <div class="sh-src-notes"><p data-k="say">Do it live: dip the end of a strip of tissue or chalk into coloured water and watch it rise. Ask for other examples (diya wick, kerosene stove wick, sponge, blotting paper). Introduce the word capillary — from the Latin for hair — and tell students that all of this depends on two things: how well the liquid sticks to the tube (angle of contact) and its surface tension.</p></div>
 </section>
 
-<!-- ===== f8_angle ===== -->
-<section class="sh-slide" data-sec="8" data-title="Angle of contact" data-init="contact">
+<!-- ===== f8_real ===== -->
+<section class="sh-slide" data-sec="8" data-title="Capillary action around you" data-init="realcap">
   <div class="sh-in">
-    <div class="sh-head" data-a><div class="k">8 · Capillarity</div><h2 class="t">Does the liquid <em>wet</em> the surface? The angle of contact</h2></div>
-    <div class="sh-body"><div class="card grow sim-card" data-a><svg class="ca-svg sim-svg" viewBox="0 0 1000 520"></svg></div>
+    <div class="sh-head" data-a><div class="k">8 · Capillarity</div><h2 class="t">Capillary action <em>around you</em></h2></div>
+    <div class="sh-body"><div class="card grow sim-card" data-a><svg class="rc-svg sim-svg" viewBox="0 0 1000 560"></svg></div>
   <div class="col sim-ctl" data-a>
-    <div class="card"><div class="lbl"><span><span class="tag neet">Live</span>&nbsp; Pair</span></div><div class="row ca-pair" style="gap:8px;flex-wrap:wrap"></div>
-      <div class="lbl" style="margin-top:16px"><span>Angle of contact θ</span><output class="ca-tv"></output></div><input type="range" class="ca-t" min="0" max="180" step="1" value="0"></div>
-    <div class="rv-read"><div class="rv-st res"><small>Result</small><b class="ca-res"></b><span class="ca-n"></span></div></div>
-    <div class="callout" style="font-size:23px">θ is measured <b>inside the liquid</b>, between the solid surface and the tangent to the liquid surface at the contact point.</div>
+    <div class="card"><div class="lbl"><span><span class="tag neet">Live</span>&nbsp; Pick a real situation</span></div><div class="row rc-sc" style="gap:8px;flex-wrap:wrap"></div>
+      <div class="lbl" style="margin-top:16px"><span>Channel size: tiny ↔ wide</span></div><input type="range" class="rc-s" min="0" max="100" step="1" value="8"></div>
+    <div class="rv-read"><div class="rv-st res"><small>How high the liquid climbs</small><b class="rc-h"></b><span class="rc-n"></span></div></div>
+    <div class="callout rc-note" style="font-size:24px"></div>
   </div></div>
   </div>
-  <div class="sh-src-notes"><p data-k="say">Pick the pairs: water–glass (≈0°, wets), mercury–glass (≈140°, does not wet). The drop flattens when θ is small and balls up when θ is large. 90° is the boundary.</p><p data-k="ask">"A raindrop sits as a ball on a lotus leaf but spreads on a clean glass. What does that say about θ?" (Large θ on the leaf: does not wet. Small θ on glass: wets.)</p></div>
+  <div class="sh-src-notes"><p data-k="say">Walk through the five situations with the chips: plant, rock crack, towel, diya wick, sugar cube. In each, drag the channel size: the thinner the channel, the higher the liquid climbs. This is h = 2T cosθ / rρg in action. Ask where else they have seen it.</p><p data-k="ask">"Why does a thick tree trunk never fill with water the way a hosepipe does — and yet the top leaves still get water?" (Hair-thin xylem vessels: capillary rise plus evaporation pull.)</p></div>
+</section>
+
+<!-- ===== f8_angle ===== -->
+<section class="sh-slide" data-sec="8" data-title="Angle of contact" data-init="wetting">
+  <div class="sh-in">
+    <div class="sh-head" data-a><div class="k">8 · Capillarity</div><h2 class="t">Does the liquid <em>wet</em> the surface? The angle of contact</h2></div>
+    <div class="sh-body"><div class="card grow sim-card" data-a><svg class="wt-svg sim-svg" viewBox="0 0 1000 520" preserveAspectRatio="xMidYMid meet"></svg></div>
+  <div class="col sim-ctl" data-a>
+    <div class="card"><div class="lbl"><span><span class="tag neet">Live</span>&nbsp; Real situation</span></div><div class="row wt-sc" style="gap:8px;flex-wrap:wrap"></div>
+      <div class="lbl" style="margin-top:14px"><span>Angle of contact θ</span><output class="wt-tv"></output></div><input type="range" class="wt-t" min="0" max="180" step="1" value="8">
+      <div class="lbl" style="margin-top:12px"><span>Tilt the surface</span><output class="wt-tl"></output></div><input type="range" class="wt-tilt" min="0" max="60" step="1" value="0"></div>
+    <div class="rv-read"><div class="rv-st res"><small>Result</small><b class="wt-res"></b><span class="wt-n"></span></div></div>
+    <div class="callout wt-note" style="font-size:23px"></div>
+  </div></div>
+  </div>
+  <div class="sh-src-notes"><p data-k="say">Click through the real situations. Glass and towel: θ below 90°, the water spreads or soaks in. Raincoat, lotus leaf, mercury: θ above 90°, the liquid beads up. Then tilt the surface: a drop with a big angle rolls away at a tiny tilt, which is why a raincoat keeps you dry. θ is always measured inside the liquid.</p><p data-k="ask">"A raindrop sits as a ball on a lotus leaf but spreads on clean glass. What does that say about θ?" (Large θ on the leaf: does not wet. Small θ on glass: wets.)</p></div>
 </section>
 
 <!-- ===== f8_rules ===== -->
 <section class="sh-slide" data-sec="8" data-title="Wetting and non-wetting" data-init="">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">8 · Capillarity</div><h2 class="t">θ tells the <em>whole story</em></h2></div>
-    <div class="sh-body">
-  <div class="g2" style="width:100%;align-content:center">
-    <div class="card lg" data-f="1"><h3><small>θ &lt; 90°</small>💦 The liquid wets the solid</h3><p>Adhesion beats cohesion → <b>concave</b> meniscus → <b>capillary rise</b>. Example: water in glass.</p></div>
-    <div class="card lg" data-f="2"><h3><small>θ &gt; 90°</small>🔘 The liquid does not wet</h3><p>Cohesion beats adhesion → <b>convex</b> meniscus → <b>capillary fall</b>. Example: mercury in glass.</p></div>
-    <div class="card" data-f="3"><h3><small>θ = 90°</small>Flat surface</h3><p>The liquid neither rises nor falls. (Water in a silver tube.)</p></div>
-    <div class="card" data-f="4"><h3><small>Agents</small>🧼 and 🌂</h3><p><b>Wetting agents</b> (soap, detergent) decrease θ. <b>Waterproofing agents</b> increase θ.</p></div>
-  </div></div>
+    <div class="sh-body" style="flex-direction:column;justify-content:center"><div class="g3" style="width:100%;align-content:center;gap:20px"><div class="card fc-card" data-f="1"><svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect width="300" height="160" rx="12" fill="rgba(47,141,224,.18)"/><rect x="110" y="14" width="80" height="120" fill="none"/><path d="M110 14V134M190 14V134" stroke="#dcecf8" stroke-width="5"/><path d="M110 62Q150 98 190 62L190 134H110Z" fill="rgba(47,141,224,.7)"/><path d="M110 62Q150 98 190 62" fill="none" stroke="#fff" stroke-width="4"/><text x="150" y="154" text-anchor="middle" fill="#33d6a0" font-size="17" font-weight="700">concave · water rises</text></svg><h3><small>θ &lt; 90°</small>The liquid wets the solid</h3><p>Adhesion beats cohesion → <b>concave</b> meniscus → <b>capillary rise</b>. Water in glass.</p></div><div class="card fc-card" data-f="2"><svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect width="300" height="160" rx="12" fill="rgba(47,141,224,.18)"/><rect x="110" y="14" width="80" height="120" fill="none"/><path d="M110 14V134M190 14V134" stroke="#dcecf8" stroke-width="5"/><path d="M110 80Q150 80 190 80L190 134H110Z" fill="rgba(47,141,224,.7)"/><path d="M110 80Q150 80 190 80" fill="none" stroke="#fff" stroke-width="4"/><text x="150" y="154" text-anchor="middle" fill="#fecd0b" font-size="17" font-weight="700">flat · no rise</text></svg><h3><small>θ = 90°</small>Flat surface</h3><p>The liquid neither rises nor falls. (Water in a silver tube.)</p></div><div class="card fc-card" data-f="3"><svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect width="300" height="160" rx="12" fill="rgba(47,141,224,.18)"/><rect x="110" y="14" width="80" height="120" fill="none"/><path d="M110 14V134M190 14V134" stroke="#dcecf8" stroke-width="5"/><path d="M110 96Q150 56 190 96L190 134H110Z" fill="#9aa7b3"/><path d="M110 96Q150 56 190 96" fill="none" stroke="#fff" stroke-width="4"/><text x="150" y="154" text-anchor="middle" fill="#ff7a6b" font-size="17" font-weight="700">convex · mercury falls</text></svg><h3><small>θ &gt; 90°</small>The liquid does not wet</h3><p>Cohesion beats adhesion → <b>convex</b> meniscus → <b>capillary fall</b>. Mercury in glass.</p></div></div><div class="rem" data-f="4" style="margin-top:18px"><b class="k">Agents</b><span><b>Wetting agents</b> (soap, detergent) decrease θ · <b>waterproofing agents</b> (raincoat wax) increase θ.</span></div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">One card per click. Cohesive force: same molecules attract each other. Adhesive force: different molecules attract. Wetting = adhesion wins.</p><p data-k="ask">"Which is stronger for mercury on glass — cohesion or adhesion?" (Cohesion.)</p></div>
 </section>
@@ -2202,25 +2397,23 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="8" data-title="Special cases" data-init="">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">8 · Capillarity</div><h2 class="t">Four <em>special cases</em> NEET likes</h2></div>
-    <div class="sh-body">
-  <div class="g2" style="width:100%;align-content:center">
-    <div class="card lg" data-f="1"><h3><small>Tilted tube</small>📐 Vertical height stays the same</h3><p>The liquid goes <b>farther along</b> the tube but the vertical rise is still h.</p></div>
-    <div class="card lg" data-f="2"><h3><small>Two parallel plates, gap d</small>▯▯ Rise between plates</h3><p class="F" style="font-size:34px">h = 2T cos θ / (ρ d g)</p></div>
-    <div class="card lg" data-f="3"><h3><small>Tube too short</small>✂️ No overflow</h3><p>The liquid stays at the top with an <b>adjusted meniscus</b>.</p></div>
-    <div class="card lg" data-f="4"><h3><small>Free fall / no gravity</small>🛰️ g = 0</h3><p>The liquid rises through the <b>full length</b> of the tube (h → ∞).</p></div>
-  </div></div>
+    <div class="sh-body"><div class="g2" style="width:100%;align-content:center;gap:20px"><div class="card fc-card" data-f="1"><svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect width="300" height="160" rx="12" fill="rgba(47,141,224,.18)"/><rect x="0" y="120" width="300" height="40" fill="rgba(47,141,224,.6)"/><g transform="rotate(32 120 120)"><rect x="105" y="10" width="30" height="130" fill="rgba(255,255,255,.08)" stroke="#dcecf8" stroke-width="3"/><rect x="107" y="40" width="26" height="100" fill="rgba(47,141,224,.8)"/></g><line x1="215" y1="120" x2="215" y2="40" stroke="#fecd0b" stroke-width="3"/><text x="226" y="86" fill="#fecd0b" font-size="20" font-weight="800">h</text><line x1="60" y1="40" x2="215" y2="40" stroke="#fecd0b" stroke-width="2" stroke-dasharray="5 5"/></svg><h3><small>Tilted tube</small>Vertical height stays the same</h3><p>The liquid goes <b>farther along</b> the tube but the vertical rise is still h.</p></div><div class="card fc-card" data-f="2"><svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect width="300" height="160" rx="12" fill="rgba(47,141,224,.18)"/><rect x="0" y="120" width="300" height="40" fill="rgba(47,141,224,.6)"/><rect x="100" y="20" width="8" height="120" fill="#c9d6e2"/><rect x="170" y="20" width="8" height="120" fill="#c9d6e2"/><rect x="108" y="48" width="62" height="80" fill="rgba(47,141,224,.8)"/><line x1="188" y1="48" x2="188" y2="120" stroke="#fecd0b" stroke-width="3"/><text x="198" y="90" fill="#fecd0b" font-size="20" font-weight="800">h</text><text x="139" y="40" text-anchor="middle" fill="#8ab5d6" font-size="16">gap d</text></svg><h3><small>Two parallel plates, gap d</small>Rise between plates</h3><p><span class="F" style="font-size:30px">h = 2T cosθ / (ρ d g)</span></p></div><div class="card fc-card" data-f="3"><svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect width="300" height="160" rx="12" fill="rgba(47,141,224,.18)"/><rect x="0" y="120" width="300" height="40" fill="rgba(47,141,224,.6)"/><rect x="125" y="40" width="50" height="100" fill="rgba(255,255,255,.08)" stroke="#dcecf8" stroke-width="3"/><rect x="127" y="42" width="46" height="94" fill="rgba(47,141,224,.8)"/><path d="M127 42Q150 46 173 42" stroke="#fff" stroke-width="3" fill="none"/><text x="195" y="60" fill="#33d6a0" font-size="16" font-weight="700">stops at the top</text><text x="195" y="82" fill="#33d6a0" font-size="16" font-weight="700">no overflow</text></svg><h3><small>Tube too short</small>No overflow</h3><p>The liquid stays at the top with an <b>adjusted meniscus</b>.</p></div><div class="card fc-card" data-f="4"><svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif"><rect width="300" height="160" rx="12" fill="rgba(47,141,224,.18)"/><rect x="125" y="14" width="50" height="132" fill="rgba(255,255,255,.08)" stroke="#dcecf8" stroke-width="3"/><rect x="127" y="16" width="46" height="128" fill="rgba(47,141,224,.8)"/><text x="240" y="70" text-anchor="middle" fill="#fecd0b" font-size="22" font-weight="800">g = 0</text><text x="240" y="100" text-anchor="middle" fill="#fecd0b" font-size="14">fills the tube</text></svg><h3><small>Free fall / no gravity</small>g = 0</h3><p>The liquid rises through the <b>full length</b> of the tube (h → ∞).</p></div></div></div>
   </div>
-  <div class="sh-src-notes"><p data-k="say">Four cards. For the plates, note d replaces r (and no 2 in the denominator). Free fall: effective g is zero so even a wide tube fills.</p><p data-k="ask">"On a satellite, how high does water climb in a capillary?" (To the top — the entire length.)</p></div>
+  <div class="sh-src-notes"><p data-k="say">Four cards, each with its picture. For the plates, note d replaces r (and no 2 in the denominator). Free fall: effective g is zero so even a wide tube fills.</p><p data-k="ask">"On a satellite, how high does water climb in a capillary?" (To the top — the entire length.)</p></div>
 </section>
 
 <!-- ===== PYQ p17 ===== -->
 <section class="sh-slide" data-sec="8" data-title="NEET PYQ 2020: Mass of water in a capillary" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">8 · Capillarity · Mass of water in a capillary</div><h2 class="t">NEET PYQ <span class="pq-yr">2020</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>A capillary tube of radius <b>r</b> is immersed in water and water rises in it to a height <b>h</b>. The mass of the water in the capillary is <b>5 g</b>. Another capillary tube of radius <b>2r</b> is immersed in water. The mass of water that will rise in this tube is:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>2.5 g</span></button><button data-i="1"><i>B</i><span>5.0 g</span></button><button data-i="2" data-ok="1"><i>C</i><span>10.0 g</span></button><button data-i="3"><i>D</i><span>20.0 g</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> The weight of the lifted column is balanced by the surface-tension force: <span class="F">mg = 2πr T cos θ</span></div><div class="pq-st" data-f="2"><b>Step 2.</b> So the mass lifted is proportional to the <b>radius r</b> (T, θ, g fixed).</div><div class="pq-st" data-f="3"><b>Step 3.</b> Radius doubled → mass doubled: 2 × 5 g = <b>10 g</b>.<br><span class="dim">(Check: h ∝ 1/r halves, but the area πr² quadruples → mass ×2.)</span></div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: C.</b> 10.0 g</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="cap_m" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -2230,10 +2423,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="8" data-title="NEET PYQ NEET-II 2016: Angle of contact" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">8 · Capillarity · Angle of contact</div><h2 class="t">NEET PYQ <span class="pq-yr">NEET-II 2016</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>Three liquids of densities <b>ρ₁, ρ₂, ρ₃</b> (with ρ₁ &gt; ρ₂ &gt; ρ₃), having the same value of surface tension <b>T</b>, rise to the same height in three identical capillaries. The angles of contact θ₁, θ₂ and θ₃ obey:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>π/2 &gt; θ₁ &gt; θ₂ &gt; θ₃ ≥ 0</span></button><button data-i="1" data-ok="1"><i>B</i><span>0 ≤ θ₁ &lt; θ₂ &lt; θ₃ &lt; π/2</span></button><button data-i="2"><i>C</i><span>π/2 &lt; θ₁ &lt; θ₂ &lt; θ₃ &lt; π</span></button><button data-i="3"><i>D</i><span>π &gt; θ₁ &gt; θ₂ &gt; θ₃ &gt; π/2</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> The liquids <b>rise</b>, so cos θ is positive and θ &lt; 90°. (rules out c and d)</div><div class="pq-st" data-f="2"><b>Step 2.</b> Same h, T and r: <span class="F">h = 2T cos θ/(rρg)</span> → cos θ ∝ ρ</div><div class="pq-st" data-f="3"><b>Step 3.</b> ρ₁ &gt; ρ₂ &gt; ρ₃ → cos θ₁ &gt; cos θ₂ &gt; cos θ₃ → <b>θ₁ &lt; θ₂ &lt; θ₃ &lt; 90°</b>. That is option (b).</div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: B.</b> 0 ≤ θ₁ &lt; θ₂ &lt; θ₃ &lt; π/2</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="cap_3" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -2243,10 +2440,14 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="8" data-title="NEET PYQ 2015: Tube shorter than the rise" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">8 · Capillarity · Tube shorter than the rise</div><h2 class="t">NEET PYQ <span class="pq-yr">2015</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap tight">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>Water rises to a height <b>h</b> in a capillary tube. If the length of the capillary tube above the surface of water is made <b>less than h</b>, then:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>water rises up to a point a little below the top and stays there</span></button><button data-i="1"><i>B</i><span>water does not rise at all</span></button><button data-i="2"><i>C</i><span>water rises up to the tip of the capillary tube and then starts overflowing like a fountain</span></button><button data-i="3" data-ok="1"><i>D</i><span>water rises up to the top of the capillary tube and stays there without overflowing</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> The meniscus radius R and the tube radius r are related by <span class="F">r = R cos θ</span>.</div><div class="pq-st" data-f="2"><b>Step 2.</b> If the tube is shorter than h, the water reaches the top and the <b>meniscus becomes flatter</b> (R increases) so that the pull just matches the lifted column.</div><div class="pq-st" data-f="3"><b>Step 3.</b> So the liquid <b>stays at the top without overflowing</b>.</div><div class="pq-st" data-f="4" style="border-color:var(--green)"><b>Answer: D.</b> water rises up to the top of the capillary tube and stays there without overflowing</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="cap_s" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
@@ -2256,20 +2457,24 @@ html,body{margin:0;height:100%;background:#010f1d;overflow:hidden}
 <section class="sh-slide" data-sec="8" data-title="NEET PYQ 2013: Wettability" data-init="pyq">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">8 · Capillarity · Wettability</div><h2 class="t">NEET PYQ <span class="pq-yr">2013</span></h2></div>
-    <div class="sh-body"><div class="pq-wrap">
+    <div class="sh-body"><div class="pq-wrap tight fig">
+      <div class="pq-main">
       <div class="pq-q" data-a>The wettability of a surface by a liquid depends primarily on:</div>
+      
       <div class="pq-o" data-a><button data-i="0"><i>A</i><span>density</span></button><button data-i="1" data-ok="1"><i>B</i><span>angle of contact between the surface and the liquid</span></button><button data-i="2"><i>C</i><span>viscosity</span></button><button data-i="3"><i>D</i><span>surface tension</span></button></div>
       <div class="pq-sol on"><div class="pq-st" data-f="1"><b>Step 1.</b> A liquid wets a surface when θ &lt; 90°.</div><div class="pq-st" data-f="2"><b>Step 2.</b> So whether the surface is wetted or not is decided by the <b>angle of contact</b>.</div><div class="pq-st" data-f="3" style="border-color:var(--green)"><b>Answer: B.</b> angle of contact between the surface and the liquid</div></div>
+      </div>
+      <div class="pq-fig" data-a><svg data-pf="wet" viewBox="0 0 600 440"></svg></div>
     </div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Give the class 30–40 seconds to attempt before clicking an option. Press → to reveal the solution one step at a time.</p><p data-k="trap">Actual NEET/AIPMT question (year shown). Source: MTG NEET Chapterwise Topicwise Solutions, Physics, Ch. 9 (Mechanical Properties of Fluids).</p></div>
 </section>
 
 <!-- ===== Check yourself c8 ===== -->
-<section class="sh-slide" data-sec="8" data-title="Check yourself: capillarity" data-init="mqSet" data-set="cap">
+<section class="sh-slide" data-sec="8" data-title="Check yourself: capillarity" data-init="mqFig" data-set="cap">
   <div class="sh-in">
     <div class="sh-head" data-a><div class="k">8 · Capillarity · Check yourself</div><h2 class="t">Quick <em>check</em> — capillarity</h2></div>
-    <div class="sh-body"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div></div>
+    <div class="sh-body"><div class="fig-row"><div class="card lg grow qz-card" data-a><div class="qz-body"></div></div><div class="pq-fig qz-fig" data-a><svg data-pf="cap_m" viewBox="0 0 600 440"></svg></div></div></div>
   </div>
   <div class="sh-src-notes"><p data-k="say">Answer on paper first, then click. Most of these are from the Check-Your-Understanding sets in the class notes.</p></div>
 </section>
@@ -2999,15 +3204,34 @@ SH.inits.terminal=function(sl){
 
 /* ---- splitting drops ---- */
 SH.inits.drops=function(sl){
-  var svg=$('.dr-svg',sl),ns=SH.rng(sl,'.dr-n',draw);
-  function draw(){var k=+ns.value,n=k*k*k,R=.01,T0=.072,Rpx=150;SH.clear(svg);SH.defs(svg);
-    S('circle',{cx:230,cy:290,r:Rpx,fill:'rgba(47,141,224,.4)',stroke:'#8ab5d6','stroke-width':4},svg);T(svg,230,296,'1 drop',34,'#fff','middle',800);T(svg,230,500,'R = 1 cm',28,'#8ab5d6','middle');
-    SH.arrow(svg,400,290,520,290,'#fecd0b',8,24);T(svg,460,270,'split',24,'#fecd0b','middle');
-    var r=Rpx/k,gx=560,gy=140,bx=300;for(var i=0;i<k;i++)for(var j=0;j<k;j++)S('circle',{cx:gx+r+i*2*r*(300/(2*r*k))*1,cy:gy+r+j*2*r,r:r*.94,fill:'rgba(47,141,224,.45)',stroke:'#8ab5d6','stroke-width':Math.max(1,3/k*1.6)},svg);
-    T(svg,710,500,k===1?'1 drop':n+' drops in all (one layer of '+(k*k)+' drawn)',26,'#8ab5d6','middle');
+  var svg=$('.dr-svg',sl),ns=SH.rng(sl,'.dr-n',function(){go(true)}),raf=0,Rpx=150,cur=0;
+  function frame(k,t){SH.clear(svg);SH.defs(svg);
+    var e=1-Math.pow(1-t,3),n=k*k*k,r=Rpx/k,gx=700,gy=290;
+    /* big drop, fades as it splits */
+    S('circle',{cx:230,cy:290,r:Rpx,fill:'rgba(47,141,224,.4)',stroke:'#8ab5d6','stroke-width':4,opacity:k===1?1:(1-.75*e)},svg);
+    S('circle',{cx:230-45,cy:290-50,r:26,fill:'#fff',opacity:.18*(1-.7*e)},svg);
+    T(svg,230,296,'1 drop',34,'#fff','middle',800);T(svg,230,500,'R = 1 cm',28,'#8ab5d6','middle');
+    SH.arrow(svg,400,290,500,290,'#fecd0b',8,24);T(svg,450,268,'split',24,'#fecd0b','middle');
+    /* k x k grid, drawn as 3 stacked layers to suggest k cubed drops */
+    var layers=Math.min(3,k);
+    for(var L=layers-1;L>=0;L--)for(var i=0;i<k;i++)for(var j=0;j<k;j++){
+      var tx=gx-Rpx+r+i*2*r+L*r*.45,ty=gy-Rpx+r+j*2*r-L*r*.45;
+      var sx=230,sy=290,x=sx+(tx-sx)*e,y=sy+(ty-sy)*e,rr=(k===1?Rpx:Rpx+(r-Rpx)*e);
+      var sh=1-L*.18;
+      S('circle',{cx:x,cy:y,r:Math.max(1,rr*.93),fill:'rgba('+Math.round(47*sh)+','+Math.round(141*sh)+','+Math.round(224*sh)+',.55)',stroke:'#8ab5d6','stroke-width':Math.max(1.2,3/k*1.6)},svg);
+      if(rr>6)S('circle',{cx:x-rr*.3,cy:y-rr*.32,r:Math.max(1.2,rr*.18),fill:'#fff',opacity:.35},svg);
+    }
+    T(svg,gx,500,k===1?'1 drop':n+' tiny drops  (each of radius R ÷ '+k+')',26,'#8ab5d6','middle');
+  }
+  function go(anim){var k=+ns.value,n=k*k*k,R=.01,T0=.072;
     $('.dr-nv',sl).textContent=n;$('.dr-r',sl).textContent=(10/k).toFixed(2)+' mm';$('.dr-a',sl).textContent='× '+k;
-    $('.dr-w',sl).textContent=SH.sci(4*Math.PI*R*R*T0*(k-1),3)+' J'}
-  draw();
+    $('.dr-w',sl).textContent=SH.sci(4*Math.PI*R*R*T0*(k-1),3)+' J';
+    cancelAnimationFrame(raf);
+    if(!anim){frame(k,1);return}
+    var t0=null;(function st(ts){if(t0===null)t0=ts;var t=Math.min(1,(ts-t0)/700);frame(k,t);if(t<1)raf=requestAnimationFrame(st)})(performance.now());
+  }
+  go(false);
+  return {enter:function(){go(true)},leave:function(){cancelAnimationFrame(raf)}};
 };
 
 /* ---- excess pressure ---- */
@@ -3075,6 +3299,409 @@ SH.inits.capill=function(sl){
 };
 })();
 
+/* Live figures for PYQ / practice / check slides.  Each figure: SH.pqf[name](svg, ui) -> optional {enter,leave} */
+(function(){var SH=window.SH,$=SH.$,$$=SH.$$,S=SH.svg,T=SH.txt,A=SH.arrow;
+var PF=SH.pqf={},K={g:'#33d6a0',r:'#ff7a6b',y:'#fecd0b',s:'#8ab5d6',w:'#dcecf8',b:'#2f8de0'};
+function fresh(svg){SH.clear(svg);SH.defs(svg)}
+function R(svg,x,y,w,h,fill,st,sw,rx){return S('rect',{x:x,y:y,width:Math.max(0,w),height:Math.max(0,h),fill:fill||'none',stroke:st||'none','stroke-width':sw||0,rx:rx||0},svg)}
+function C(svg,x,y,r,fill,st,sw){return S('circle',{cx:x,cy:y,r:Math.max(.5,r),fill:fill||'none',stroke:st||'none','stroke-width':sw||0},svg)}
+function L(svg,x1,y1,x2,y2,st,sw,dash){var a={x1:x1,y1:y1,x2:x2,y2:y2,stroke:st,'stroke-width':sw||3};if(dash)a['stroke-dasharray']=dash;return S('line',a,svg)}
+function P(svg,d,fill,st,sw){return S('path',{d:d,fill:fill||'none',stroke:st||'none','stroke-width':sw||0,'stroke-linejoin':'round'},svg)}
+function t(svg,x,y,s,fs,col,an,wt){return T(svg,x,y,s,fs||22,col||K.w,an||'middle',wt||700)}
+function mkui(box){var o={read:null,slider:function(label,min,max,step,val,cb){
+    var row=SH.el('label',{class:'pf-row'});row.appendChild(SH.el('span',{},label));
+    var r=SH.el('input',{type:'range',min:min,max:max,step:step,value:val});row.appendChild(r);box.insertBefore(row,rd);
+    r.addEventListener('input',function(){SH.paintRange(r);cb(+r.value)});SH.paintRange(r);return r}};
+  var rd=SH.el('div',{class:'pf-read'});box.appendChild(rd);o.out=function(h){rd.innerHTML=h};return o}
+SH.mountFig=function(sl){var svg=$('svg[data-pf]',sl);if(!svg)return null;var f=PF[svg.getAttribute('data-pf')];if(!f)return null;
+  var box=SH.el('div',{class:'pf-ctl'});svg.parentNode.appendChild(box);return f(svg,mkui(box))};
+function f2(x,d){return (+x).toFixed(d==null?1:d)}
+
+/* ---------- barometer in a lift ---------- */
+PF.lift=function(svg,u){var a=u.slider('Lift acceleration, upwards (m/s²)',-5,10,.5,0,d);
+  function d(){fresh(svg);var A=+a.value,h=76*9.8/(9.8+A),hp=h*3;
+    R(svg,110,20,380,400,'rgba(255,255,255,.04)',K.w,4,14);t(svg,300,50,'lift',22,K.s);
+    R(svg,205,350,190,52,'url(#hgm)');R(svg,285,110,30,250,'rgba(255,255,255,.06)',K.w,4);
+    R(svg,288,350-hp,24,hp+8,'url(#hgm)');t(svg,300,150,'vacuum',18,K.s);
+    L(svg,330,350-hp,330,350,K.y,3);L(svg,322,350-hp,338,350-hp,K.y,3);L(svg,322,350,338,350,K.y,3);t(svg,340,350-hp/2,f2(h)+' cm',26,K.y,'start',800);
+    if(Math.abs(A)>.2)A_(svg,60,250,60,250-A*14,K.g);t(svg,56,282,'a = '+f2(A),22,K.g,'end');
+    u.out('Reading  h = P₀ ÷ ρ(g + a) = <b>'+f2(h)+' cm</b>'+(A>0?' &nbsp;(smaller)':A<0?' &nbsp;(larger)':' &nbsp;(rest value)'))}
+  d()};
+function A_(svg,x1,y1,x2,y2,c){return A(svg,x1,y1,x2,y2,c,6,18)}
+
+/* ---------- hydraulic lift ---------- */
+PF.hyd=function(svg,u){var a=u.slider('Force on small piston F₁ (N)',0,50,1,20,d);
+  function d(){fresh(svg);var F=+a.value,dn=F/50*46,up=dn/5;
+    R(svg,60,330,480,70,'url(#wtr)');R(svg,70,250+dn+12,60,80,'url(#wtr)');R(svg,250,250-up+12,280,80,'url(#wtr)');
+    P(svg,'M70 150V330H250V230M130 150V318H250',null,K.w,4);P(svg,'M250 330H530V230M250 318H530',null,K.w,4);
+    P(svg,'M70 330H530',null,K.w,4);
+    R(svg,70,250+dn,60,12,'#c9d6e2',K.w,2);L(svg,100,250+dn,100,150,K.w,6);
+    A_(svg,100,100,100,150+dn*0,K.y);t(svg,100,84,'F₁ = '+F+' N',22,K.y);
+    R(svg,250,250-up,280,12,'#c9d6e2',K.w,2);R(svg,325,250-up-86,130,86,'url(#blk)',K.w,3,6);t(svg,390,250-up-34,'load',24,'#fff');t(svg,390,250-up-10,'F₂ = '+(F*50)+' N',22,'#fff');
+    t(svg,100,380,'A₁ = 10 cm²',20,K.s);t(svg,390,380,'A₂ = 500 cm²',20,K.s);t(svg,300,430,'(drawing not to scale)',16,K.s);
+    u.out('F₂ = F₁ × A₂/A₁ = '+F+' × 50 = <b>'+(F*50)+' N</b> &nbsp;·&nbsp; small piston moves 50× farther')}
+  d()};
+
+/* ---------- floating cylinder in two liquids ---------- */
+PF.float=function(svg,u){var p=u.slider('Fraction of length in the denser liquid, p',0,1,.05,.5,d),n=u.slider('Density ratio n',1.2,3,.1,2,d);
+  function d(){fresh(svg);var pp=+p.value,nn=+n.value,Lc=170,bot=240+pp*Lc;
+    R(svg,130,70,340,170,'rgba(138,181,214,.28)');R(svg,130,240,340,170,'rgba(254,205,11,.30)');P(svg,'M130 70V410H470V70',null,K.w,5);
+    t(svg,450,100,'ρ',24,K.s,'end');t(svg,450,270,'nρ',24,K.y,'end');
+    R(svg,235,bot-Lc,70,Lc,'url(#blk)',K.w,3,4);t(svg,270,bot-Lc/2+8,'d',28,'#fff');
+    if(pp>.05){L(svg,330,240,330,bot,K.y,3);t(svg,340,(240+bot)/2+6,'pL',22,K.y,'start');}
+    if(pp<.95){L(svg,330,bot-Lc,330,240,K.s,3);t(svg,340,(bot-Lc+240)/2+6,'(1−p)L',22,K.s,'start')}
+    L(svg,130,240,470,240,K.r,2,'8 6');
+    u.out('Weight = upthrust from both liquids &nbsp;→&nbsp; d = ρ{1 + (n − 1)p} = <b>'+f2(1+(nn-1)*pp,2)+' ρ</b>')}
+  d()};
+
+/* ---------- spray pump (continuity) ---------- */
+PF.spray=function(svg,u){var a=u.slider('Number of holes, n',1,8,1,4,function(){upd()}),tt=0;
+  function upd(){var n=+a.value;u.out('Continuity:&nbsp; πR²·V = n·πr²·v &nbsp;→&nbsp; v = VR²/(nr²) = <b>'+f2(9/n,2)+' V</b> &nbsp;(here R = 3r)')}
+  upd();
+  var lp=SH.loop(function(dt){tt+=dt;fresh(svg);var n=+a.value,vis=40*9/n;
+    P(svg,'M40 130H300V310H40',null,K.w,5);R(svg,40,132,260,176,'rgba(47,141,224,.28)');
+    for(var k=0;k<6;k++)for(var r=0;r<3;r++){var x=40+((tt*60+k*45+r*17)%260);C(svg,x,170+r*50,5,K.s)}
+    A_(svg,60,100,150,100,K.s);t(svg,100,84,'speed V',20,K.s);
+    P(svg,'M300 130V310',null,K.w,5);
+    for(var i=0;i<n;i++){var y=130+(i+.5)*180/n;C(svg,300,y,3.5,K.y);for(var j=0;j<5;j++){var x2=300+((tt*vis+j*52+i*9)%260);C(svg,x2,y,4,K.y)}}
+    t(svg,430,110,'n = '+n+' fine holes',22,K.y);t(svg,430,340,'jets: speed v = '+f2(9/n,1)+' V',22,K.y)});
+  return lp};
+
+/* ---------- venturimeter / variable pipe ---------- */
+function pipeFig(svg,u,three){var a=u.slider('Narrow the throat',20,95,1,55,reset),ps=[],tt=0,cy=300,H0=70;
+  function hh(x,s){var h=H0*s/100;if(x<170)return H0;if(x<230)return H0+(h-H0)*(x-170)/60;if(x<370)return h;if(x<430)return h+(H0-h)*(x-370)/60;return H0}
+  function reset(){ps=[];for(var i=0;i<22;i++)ps.push({x:30+i*25.5,r:((i%5)-2)*.3});}
+  reset();
+  function draw(){fresh(svg);var s=+a.value/100,h=H0*s;
+    var top='M30 '+(cy-H0)+'H170L230 '+(cy-h)+'H370L430 '+(cy-H0)+'H570',bot='M30 '+(cy+H0)+'H170L230 '+(cy+h)+'H370L430 '+(cy+H0)+'H570';
+    P(svg,top,null,K.w,5);P(svg,bot,null,K.w,5);
+    S('polygon',{points:'30,'+(cy-H0)+' 170,'+(cy-H0)+' 230,'+(cy-h)+' 370,'+(cy-h)+' 430,'+(cy-H0)+' 570,'+(cy-H0)+' 570,'+(cy+H0)+' 430,'+(cy+H0)+' 370,'+(cy+h)+' 230,'+(cy+h)+' 170,'+(cy+H0)+' 30,'+(cy+H0),fill:'rgba(47,141,224,.25)'},svg);
+    var xs=three?[100,300,500]:[100,300],h1=150,colh=function(x){return x>200&&x<400?Math.max(20,h1-42*(1/(s*s)-1)):h1};
+    xs.forEach(function(x){var base=cy-hh(x,a.value),ch=colh(x);R(svg,x-12,base-210,24,210,'rgba(255,255,255,.05)',K.w,3);R(svg,x-9,base-ch,18,ch,'url(#wtr)');
+      t(svg,x+18,base-ch+6,x===300?'low P':'high P',18,x===300?K.r:K.g,'start')});
+    ps.forEach(function(q){var hl=hh(q.x,a.value);C(svg,q.x,cy+q.r*hl,5,K.s)});
+    var v1=40,v2=40/(s*s);A_(svg,60,cy+H0+34,60+v1,cy+H0+34,K.s);A_(svg,260,cy+H0+34,260+Math.min(150,v2),cy+H0+34,K.y);
+    t(svg,60,cy+H0+66,'slow',18,K.s,'start');t(svg,260,cy+H0+66,'FAST',18,K.y,'start');
+    if(three){A_(svg,470,cy+H0+34,470+v1,cy+H0+34,K.s);t(svg,470,cy+H0+66,'slow',18,K.s,'start')}
+    u.out('Continuity: A·v = constant → speed in the throat = <b>'+f2(1/(s*s),1)+' ×</b> the speed in the wide part. Bernoulli: faster → <b>lower pressure</b>')}
+  draw();
+  return SH.loop(function(dt){tt+=dt;var s=a.value;ps.forEach(function(q){q.x+=45*(H0/hh(q.x,s))*dt;if(q.x>570){q.x=30;q.r=((Math.random()*5|0)-2)*.3}});draw()})}
+PF.venturi=function(svg,u){return pipeFig(svg,u,false)};
+PF.pipe=function(svg,u){return pipeFig(svg,u,true)};
+
+/* ---------- Torricelli tank ---------- */
+PF.tank=function(svg,u){var a=u.slider('Water height above the hole, h (m)',.5,2,.1,2,d);
+  function d(){fresh(svg);var h=+a.value,v=Math.sqrt(20*h),yl=360-150*h;
+    R(svg,72,yl,226,360-yl,'url(#wtr)');P(svg,'M70 60V360H300V60',null,K.w,5);L(svg,40,382,580,382,K.s,4);
+    C(svg,300,345,5,K.y);
+    var tf=Math.sqrt(2*(37/150)/10),pts=[];for(var i=0;i<=20;i++){var tau=tf*i/20;pts.push((i?'L':'M')+(300+v*tau*150)+' '+(345+.5*10*tau*tau*150))}
+    var j=P(svg,pts.join(' '),null,K.s,7);j.setAttribute('stroke-dasharray','14 8');j.setAttribute('stroke-linecap','round');
+    var an=S('animate',{attributeName:'stroke-dashoffset',from:0,to:-44,dur:Math.max(.25,.9/v*3)+'s',repeatCount:'indefinite'},j);
+    L(svg,50,yl,50,345,K.y,3);L(svg,42,yl,58,yl,K.y,3);L(svg,42,345,58,345,K.y,3);t(svg,46,(yl+345)/2+6,'h = '+f2(h)+' m',22,K.y,'end');
+    t(svg,185,yl+34,'water',22,K.w);t(svg,420,320,'v = √(2gh)',24,K.y,'start');
+    u.out('v = √(2gh) = √(2×10×'+f2(h)+') = <b>'+f2(v,2)+' m/s</b> &nbsp;→&nbsp; Q = Av = 2×10⁻⁶ × '+f2(v,2)+' = <b>'+f2(2*v,1)+' × 10⁻⁶ m³/s</b>')}
+  d()};
+
+/* ---------- wind on a roof ---------- */
+PF.roof=function(svg,u){var a=u.slider('Wind speed (m/s)',0,60,1,40,d);
+  function d(){fresh(svg);var v=+a.value,dP=.5*1.2*v*v,F=dP*250,al=Math.min(170,F/2.4e5*80);
+    R(svg,150,270,300,130,'rgba(255,255,255,.06)',K.w,4);S('polygon',{points:'125,272 300,165 475,272',fill:'#8a3d30',stroke:K.w,'stroke-width':4},svg);
+    t(svg,300,350,'inside: P₀',24,K.s);
+    if(v>0){var w=P(svg,'M40 150Q300 -20 570 150',null,K.s,3+v/12);w.setAttribute('stroke-dasharray','16 12');S('animate',{attributeName:'stroke-dashoffset',from:0,to:-56,dur:Math.max(.3,2.4/(v/10+.5))+'s',repeatCount:'indefinite'},w);
+      A_(svg,50,80,50+v*3,80,K.s);t(svg,50,62,'wind '+v+' m/s',20,K.s,'start')}
+    if(al>3){A_(svg,300,165,300,165-al,K.r);t(svg,322,165-al/2+8,'net push UP',22,K.r,'start')}
+    t(svg,300,24,'fast air above → LOW pressure',20,K.y);
+    u.out('ΔP = ½ρv² = '+SH.sci(dP,3)+' Pa &nbsp;→&nbsp; F = ΔP × 250 m² = <b>'+SH.sci(F,3)+' N, upwards</b>')}
+  d()};
+
+/* ---------- Stokes drag ---------- */
+PF.stokes=function(svg,u){var a=u.slider('Speed of the sphere v (m/s)',0,4,.1,2,d);
+  function d(){fresh(svg);var v=+a.value,F=6*Math.PI*.8*.5e-3*v;
+    R(svg,150,20,300,400,'url(#wtr)');
+    for(var k=0;k<5;k++){var x=190+k*55,l=L(svg,x,40,x,400,'rgba(255,255,255,.35)',3,'12 12');if(v>0)S('animate',{attributeName:'stroke-dashoffset',from:0,to:-48,dur:Math.max(.3,4/(v+.2))+'s',repeatCount:'indefinite'},l)}
+    C(svg,300,200,30,'url(#hgm)',K.w,3);
+    if(v>0){A_(svg,300,232,300,232+v*34,K.g);t(svg,320,250+v*17,'v',22,K.g,'start');A_(svg,300,168,300,168-v*30,K.r);t(svg,320,120,'drag F = 6πηrv',22,K.r,'start')}
+    t(svg,470,380,'η = 0.8 Pa s',20,K.s,'start');t(svg,470,404,'r = 0.5 mm',20,K.s,'start');
+    u.out('F = 6πηrv = 6π × 0.8 × 0.5×10⁻³ × '+f2(v,1)+' = <b>'+f2(F*1000,1)+' mN</b>')}
+  d()};
+
+/* ---------- v–t of a ball in thick liquid ---------- */
+PF.vt=function(svg,u){var a=u.slider('Liquid thickness (bigger = slower to settle)',.4,2.4,.1,1,function(){tm=0}),tm=0,TT=6;
+  return SH.loop(function(dt){tm+=dt;if(tm>TT+1.5)tm=0;var tau=+a.value,t0=Math.min(tm,TT);fresh(svg);
+    var sm=TT-tau*(1-Math.exp(-TT/tau)),sc=function(x){return x-tau*(1-Math.exp(-x/tau))};
+    R(svg,40,30,150,380,'url(#wtr)',K.w,4);var by=60+330*sc(t0)/sm;C(svg,115,by,14,'url(#hgm)',K.w,2);
+    L(svg,270,380,570,380,K.w,3);L(svg,270,380,270,50,K.w,3);t(svg,262,60,'v',22,K.w,'end');t(svg,560,404,'t',22,K.w,'end');
+    L(svg,270,90,570,90,K.r,2,'8 6');t(svg,560,80,'terminal speed',17,K.r,'end');
+    var pts=[];for(var i=0;i<=60;i++){var x=t0*i/60;pts.push((i?'L':'M')+(270+x/TT*290)+' '+(380-(1-Math.exp(-x/tau))*290))}P(svg,pts.join(' '),null,K.g,6);
+    C(svg,270+t0/TT*290,380-(1-Math.exp(-t0/tau))*290,9,K.y);
+    t(svg,420,250,'rises, then flattens',22,K.g);
+    u.out('Starts from rest (v = 0); weight = upthrust + drag → <b>constant speed</b>. Curve <b>B</b>')})};
+
+/* ---------- forces at terminal velocity ---------- */
+PF.term=function(svg,u){var a=u.slider('Glycerine density ÷ ball density (σ/d)',0,1,.05,.5,d);
+  function d(){fresh(svg);var r=+a.value;R(svg,130,20,340,400,'url(#wtr)');C(svg,300,230,40,'url(#blk)',K.w,3);t(svg,300,238,'M',26,'#fff');
+    A_(svg,300,272,300,272+120,K.s);t(svg,316,350,'weight Mg',22,K.s,'start');
+    if(r>.02){A_(svg,270,190,270,190-120*r,K.y);t(svg,262,190-60*r-6,'U = '+f2(r,2)+' Mg',20,K.y,'end')}
+    A_(svg,330,190,330,190-120*(1-r),K.r);t(svg,342,190-60*(1-r)-6,'viscous F',20,K.r,'start');
+    t(svg,300,44,'constant speed → net force = 0',20,K.y);
+    u.out('F = Mg − U = Mg(1 − σ/d) = <b>'+f2(1-r,2)+' Mg</b>'+(Math.abs(r-.5)<.01?' &nbsp;= Mg/2 ✔':''))}
+  d()};
+
+/* ---------- race: terminal velocities 79:36 ---------- */
+PF.race=function(svg,u){var tm=0;u.out('v<sub>t</sub> ∝ r²(ρ − σ): &nbsp; ball 1 → 7.9ρ₂, ball 2 → 3.6ρ₂ &nbsp;→&nbsp; ratio <b>79 : 36 ≈ 2.2</b>');
+  return SH.loop(function(dt){tm+=dt;if(tm>5)tm=0;fresh(svg);var v1=100,v2=v1*36/79;
+    [[150,'Ball 1',10,'r = 1 mm · ρ₁ = 8ρ₂',v1],[420,'Ball 2',18,'r = 2 mm · ρ₂',v2]].forEach(function(b){R(svg,b[0]-60,40,120,350,'url(#wtr)',K.w,4);
+      var y=Math.min(370,70+b[4]*tm);C(svg,b[0],y,b[2],'url(#hgm)',K.w,2);L(svg,b[0]-4,70,b[0]-4,y,'rgba(255,255,255,.3)',2,'4 6');
+      t(svg,b[0],26,b[1],22,K.y);t(svg,b[0],412,b[3],17,K.s)});
+    })};
+
+/* ---------- heat production ∝ r^5 ---------- */
+PF.heat=function(svg,u){var a=u.slider('Radius of the sphere r (mm)',1,3,.1,1,d);
+  function d(){fresh(svg);var r=+a.value;R(svg,40,20,200,400,'url(#wtr)',K.w,4);
+    C(svg,140,170,10+14*r+6*r,'rgba(255,122,107,'+Math.min(.6,.08+r*r*r*r*r/243*.5)+')');C(svg,140,170,14*r,'url(#hgm)',K.w,2);
+    A_(svg,140,170+14*r+8,140,170+14*r+8+10*r*r,K.g);t(svg,152,250+6*r*r,'v',20,K.g,'start');
+    var bars=[['r',r,3,K.s],['v_t ∝ r²',r*r,9,K.y],['heat rate ∝ r⁵',Math.pow(r,5),243,K.r]];
+    bars.forEach(function(b,i){var y=70+i*110;t(svg,290,y,b[0]+'  =  ×'+f2(b[1],1),22,b[3],'start');R(svg,290,y+14,290,22,'rgba(255,255,255,.07)');R(svg,290,y+14,Math.max(3,290*b[1]/b[2]),22,b[3])});
+    u.out('Heat per second = F·v<sub>t</sub> = 6πηr·v<sub>t</sub>² ∝ r·r⁴ = <b>r⁵</b> &nbsp;(×'+f2(Math.pow(r,5),1)+' compared with r = 1)')}
+  d()};
+
+/* ---------- pressure is a scalar ---------- */
+PF.pvec=function(svg,u){var a=u.slider('Tilt the small plate (°)',0,180,1,30,d);
+  function d(){fresh(svg);var th=+a.value*Math.PI/180;R(svg,60,30,480,380,'url(#wtr)',K.w,3,16);
+    for(var i=0;i<12;i++){var an=i*Math.PI/6,x=300+Math.cos(an)*150,y=220+Math.sin(an)*150;A_(svg,x,y,300+Math.cos(an)*100,220+Math.sin(an)*100,'rgba(220,236,248,.28)')}
+    var c=Math.cos(th),s=Math.sin(th);L(svg,300-c*60,220-s*60,300+c*60,220+s*60,K.w,10);
+    var nx=-s,ny=c;A_(svg,300+nx*130,220+ny*130,300+nx*40,220+ny*40,K.y);A_(svg,300-nx*130,220-ny*130,300-nx*40,220-ny*40,K.y);
+    t(svg,300,56,'a point deep in the liquid',20,K.s);
+    u.out('Force on the plate is <b>⟂ to it</b> and turns as you tilt it. But P = F/A = <b>5000 Pa</b> in every position → <b>pressure is a scalar</b>')}
+  d()};
+
+/* ---------- soap bubble energy ---------- */
+PF.bub_e=function(svg,u){var a=u.slider('Bubble radius R (cm)',.5,4,.1,2,d);
+  function d(){fresh(svg);var Rr=+a.value,r=Rr*46;C(svg,300,215,r,'rgba(255,255,255,.08)',K.w,5);C(svg,300,215,r-9,'none','rgba(255,158,216,.7)',4);
+    A_(svg,300+r*.2,215,300+r+34,215,K.y,5);t(svg,300+r+40,222,'two surfaces',20,K.y,'start');
+    L(svg,300,215,300+r*.7,215-r*.7,K.s,3);t(svg,300+r*.35+8,215-r*.4,'R',24,K.s,'start');
+    var W=.03*2*4*Math.PI*Math.pow(Rr/100,2);
+    u.out('W = T × ΔA = 0.03 × 2 × 4πR² = <b>'+SH.sci(W,3)+' J</b> &nbsp;(R = '+f2(Rr)+' cm)')}
+  d()};
+
+/* ---------- bubble expands -> excess pressure falls ---------- */
+PF.bub_p=function(svg,u){var a=u.slider('Bubble radius R (cm)',.5,4,.1,1,d);
+  function d(){fresh(svg);var Rr=+a.value,r=Rr*40,dP=4*.03/(Rr/100);C(svg,170,215,r,'rgba(255,255,255,.08)',K.w,5);C(svg,170,215,r-8,'none','rgba(255,158,216,.7)',3);
+    for(var i=0;i<8;i++){var an=i*Math.PI/4;A_(svg,170+Math.cos(an)*(r-30),215+Math.sin(an)*(r-30),170+Math.cos(an)*(r-6),215+Math.sin(an)*(r-6),K.y,4,11)}
+    L(svg,380,40,380,380,K.w,3);L(svg,380,380,580,380,K.w,3);t(svg,372,56,'ΔP',20,K.w,'end');
+    R(svg,430,380-dP/24*300,90,dP/24*300,K.g);t(svg,475,380-dP/24*300-10,SH.sci(dP,2)+' Pa',22,K.g);
+    t(svg,475,408,'ΔP = 4T/R',20,K.s);
+    u.out('ΔP = 4T/R = <b>'+f2(dP,1)+' Pa</b> &nbsp;→&nbsp; expanding bubble: R ↑ so ΔP <b>decreases</b>')}
+  d()};
+
+/* ---------- bubble pressure vs depth ---------- */
+PF.depth=function(svg,u){var a=u.slider('Depth below the water surface Z (cm)',0,2,.05,.5,d);
+  function d(){fresh(svg);var z=+a.value,y=60+z*160,pz=1000*10*z/100,ok=Math.abs(pz-100)<3;
+    C(svg,120,200,52,'rgba(255,255,255,.1)',K.w,4);C(svg,120,200,44,'none','rgba(255,158,216,.7)',3);t(svg,120,206,'1 mm',20,K.w);
+    t(svg,120,290,'soap bubble',20,K.s);t(svg,120,316,'excess = 4T/R',20,K.y);t(svg,120,344,'= 100 Pa',26,K.y);
+    R(svg,270,60,300,350,'url(#wtr)');L(svg,270,60,570,60,K.w,4);t(svg,420,48,'free surface',18,K.s);
+    L(svg,270,y,570,y,ok?K.g:K.r,4,'10 8');A_(svg,250,60,250,y,K.y,4,13);t(svg,238,(60+y)/2+6,'Z',24,K.y,'end');
+    t(svg,420,Math.min(y+30,396),'ρgZ = '+Math.round(pz)+' Pa',24,ok?K.g:K.r);
+    u.out('Gauge pressure at depth Z is ρgZ; set it equal to 100 Pa &nbsp;→&nbsp; '+(ok?'<b style="color:#33d6a0">Z₀ = 1 cm ✔</b>':'slide to find where ρgZ = 100 Pa'))}
+  d()};
+
+/* ---------- film stretched ---------- */
+PF.film=function(svg,u){var a=u.slider('Stretch the film (4×2 cm → 5×4 cm)',0,1,.02,0,d);
+  function d(){fresh(svg);var s=+a.value,w=(4+s)*46,h=(2+2*s)*46;
+    R(svg,80,60,w,h,'rgba(138,200,255,.35)',K.w,5);P(svg,'M80 60V'+(60+h+30)+'M80 60H'+(80+w+80),null,K.w,5);
+    L(svg,80+w,50,80+w,70+h,'#c9d6e2',9);A_(svg,80+w+10,60+h/2,80+w+78,60+h/2,K.y);t(svg,80+w+40,60+h/2-14,'pull',20,K.y);
+    t(svg,80+w/2,60+h/2+8,(4+s).toFixed(1)+' × '+(2+2*s).toFixed(1)+' cm',24,K.w);
+    var dA=(4+s)*(2+2*s)-8,W=.125*2*dA*1e-4;
+    t(svg,300,400,'a film has TWO faces → area counted twice',20,K.y);
+    u.out('ΔA (one face) = '+f2(dA,1)+' cm² &nbsp;→&nbsp; W = T × 2ΔA = 0.125 × 2 × '+f2(dA,1)+'×10⁻⁴ = <b>'+f2(W*1e4,2)+' × 10⁻⁴ J</b>'+(s>.99?' ✔':''))}
+  d()};
+
+/* ---------- drops coalescing ---------- */
+PF.coal=function(svg,u){var a=u.slider('Merge the drops',0,1,.02,0,d);
+  function d(){fresh(svg);var m=+a.value,rs=34,Rb=68,k=Math.min(1,m/.6),uu=Math.max(0,(m-.6)/.4);
+    var pos=[];for(var i=0;i<4;i++)for(var j=0;j<2;j++)pos.push([150+i*100,150+j*140]);
+    pos.forEach(function(p){var x=p[0]+(300-p[0])*k*.88,y=p[1]+(220-p[1])*k*.88;C(svg,x,y,rs*(1-uu),'rgba(47,141,224,.55)',K.s,3)});
+    if(uu>0)C(svg,300,220,Rb*Math.pow(uu,.7)+rs*.0,'rgba(47,141,224,.6)',K.w,4);
+    var ar=1-.5*uu;t(svg,300,400,'8 drops (radius r)  →  1 drop (R = 2r)',22,K.s);
+    R(svg,40,24,520,14,'rgba(255,255,255,.08)');R(svg,40,24,520*ar,14,K.r);t(svg,40,20,'total surface area',16,K.r,'start');
+    u.out('Surface area falls to <b>'+f2(ar*100,0)+' %</b> → energy <b>released</b> = T × ΔA = 3VT(1/r − 1/R)')}
+  d()};
+
+/* ---------- capillary: mass in the tube ---------- */
+PF.cap_m=function(svg,u){var a=u.slider('Second tube radius, in multiples of r',1,3,.1,2,d);
+  function d(){fresh(svg);var k=+a.value,h=180,w1=30,w2=30*k;R(svg,30,330,540,80,'url(#wtr)');L(svg,30,330,570,330,K.w,3);
+    [[150,w1,h,'r','5 g'],[400,w2,h/k,'r×'+f2(k,1),f2(5*k,1)+' g']].forEach(function(b){var x=b[0],w=b[1],hh=b[2];
+      R(svg,x-w/2,330-h-20,w,h+60,'rgba(255,255,255,.06)',K.w,4);R(svg,x-w/2+2,330-hh,w-4,hh+30,'url(#wtr)');
+      P(svg,'M'+(x-w/2+2)+' '+(330-hh)+' Q'+x+' '+(330-hh+14)+' '+(x+w/2-2)+' '+(330-hh),null,K.w,3);
+      t(svg,x,330-h-40,b[3],22,K.s);t(svg,x,395,'mass '+b[4],24,K.y)});
+    u.out('Weight lifted = 2πrT cosθ ∝ r &nbsp;→&nbsp; mass = 5 g × '+f2(k,1)+' = <b>'+f2(5*k,1)+' g</b> &nbsp;(height falls to h/'+f2(k,1)+')')}
+  d()};
+
+/* ---------- capillary: three liquids ---------- */
+PF.cap_3=function(svg,u){var tm=0;u.out('Same h, T, r: <b>cos θ ∝ ρ</b> &nbsp;→&nbsp; denser liquid, larger cos θ, <b>smaller</b> θ &nbsp;(θ₁ &lt; θ₂ &lt; θ₃ &lt; 90°)');
+  return SH.loop(function(dt){tm+=dt;if(tm>6)tm=0;fresh(svg);var e=Math.min(1,tm/1.6);e=1-Math.pow(1-e,3);var h=190*e;
+    R(svg,30,350,540,60,'url(#wtr)');L(svg,30,350,570,350,K.w,3);
+    [[110,15,'ρ₁','θ₁'],[300,40,'ρ₂','θ₂'],[490,65,'ρ₃','θ₃']].forEach(function(b,i){var x=b[0],w=40,th=b[1]*Math.PI/180,Rr=(w/2-2)/Math.cos(th),sag=Rr*(1-Math.sin(th));
+      R(svg,x-w/2,130,w,260,'rgba(255,255,255,.06)',K.w,4);R(svg,x-w/2+2,350-h+sag,w-4,h+40-sag,'url(#wtr)');
+      P(svg,'M'+(x-w/2+2)+' '+(350-h)+' Q'+x+' '+(350-h+2*sag)+' '+(x+w/2-2)+' '+(350-h),'rgba(47,141,224,.6)',K.w,3);
+      t(svg,x,112,b[2],26,K.y);if(e>.95)t(svg,x,430,b[3]+' = '+b[1]+'°',22,K.g)});
+    L(svg,60,350-190,550,350-190,K.r,2,'8 6');})};
+
+/* ---------- capillary: tube shorter than h ---------- */
+PF.cap_s=function(svg,u){var a=u.slider('Tube length above the water, as a fraction of h',.3,1.3,.05,.6,d);
+  function d(){fresh(svg);var f=+a.value,h=230,Lt=f*h,w=54,lvl=Math.min(h,Lt),cth=Math.min(1,f),th=Math.acos(cth>=1?Math.cos(5*Math.PI/180):cth);
+    R(svg,30,350,540,60,'url(#wtr)');L(svg,30,350,570,350,K.w,3);
+    var Rr=(w/2-2)/Math.cos(th),sag=Rr*(1-Math.sin(th));
+    R(svg,300-w/2,350-Lt,w,Lt+50,'rgba(255,255,255,.06)',K.w,4);R(svg,300-w/2+2,350-lvl+sag,w-4,lvl+40-sag,'url(#wtr)');
+    P(svg,'M'+(300-w/2+2)+' '+(350-lvl)+' Q300 '+(350-lvl+2*sag)+' '+(300+w/2-2)+' '+(350-lvl),'rgba(47,141,224,.6)',K.w,3);
+    L(svg,420,350-h,420,350,K.y,3,'8 6');t(svg,430,350-h/2+6,'h (long tube)',22,K.y,'start');
+    if(f<1)t(svg,300,350-Lt-18,'meniscus flatter, no overflow',20,K.g);
+    u.out('Tube length = '+f2(f,2)+' h &nbsp;→&nbsp; '+(f<1?'water reaches the top and the meniscus <b>flattens</b> (θ′ = '+Math.round(th*180/Math.PI)+'°) — it does <b>not</b> overflow':'long enough — water rises to h'))}
+  d()};
+
+/* ---------- wettability: angle of contact ---------- */
+SH.dropCap=function(svg,cx,base,theta,V0,fill,maxA){var th=Math.max(4,theta)*Math.PI/180,f=2-3*Math.cos(th)+Math.pow(Math.cos(th),3),Rc=Math.cbrt(3*V0/(Math.PI*Math.max(f,1e-4))),a=Rc*Math.sin(th);
+  if(a>(maxA||250)){a=maxA||250;Rc=a/Math.sin(th)}
+  var large=th>Math.PI/2?1:0;
+  var d='M'+(cx-a)+' '+base+' A'+Rc+' '+Rc+' 0 '+large+' 1 '+(cx+a)+' '+base+' Z';
+  return {a:a,Rc:Rc,el:S('path',{d:d,fill:fill||'rgba(47,141,224,.6)',stroke:K.w,'stroke-width':3},svg),th:th}};
+PF.wet=function(svg,u){var a=u.slider('Angle of contact θ (°)',0,180,1,30,d);
+  function d(){fresh(svg);var th=+a.value;R(svg,40,330,520,70,'#3a4f63');t(svg,300,372,'solid surface',22,K.w);
+    var dr=SH.dropCap(svg,300,330,th,2.2e6,'rgba(47,141,224,.6)',200);
+    var px=300-dr.a,rr=70,ax=Math.cos(dr.th),ay=-Math.sin(dr.th);
+    L(svg,px,330,px+120,330,K.y,3,'8 6');L(svg,px-ax*60,330-ay*60,px+ax*140,330+ay*140,K.r,3);
+    P(svg,'M'+(px+rr)+' 330A'+rr+' '+rr+' 0 0 0 '+(px+ax*rr)+' '+(330+ay*rr),null,K.g,5);t(svg,px+rr+10,314,'θ',30,K.g,'start');
+    var w=th<89;t(svg,300,60,w?'WETS the surface':th<=91?'borderline':'does NOT wet',30,w?K.g:th<=91?K.y:K.r);
+    u.out('Wettability is decided by the <b>angle of contact</b>: θ &lt; 90° wets (adhesion wins) · θ &gt; 90° does not wet (cohesion wins)')}
+  d()};
+})();
+
+SH.inits.mqFig=function(sl){var a=SH.inits.mqSet(sl),b=SH.mountFig(sl);return b||a};
+
+/* Capillarity in the real world + wetting scenes */
+(function(){var SH=window.SH,$=SH.$,$$=SH.$$,S=SH.svg,T=SH.txt,A=SH.arrow;
+var K={g:'#33d6a0',r:'#ff7a6b',y:'#fecd0b',s:'#8ab5d6',w:'#dcecf8'};
+function R(p,x,y,w,h,f,st,sw,rx){return S('rect',{x:x,y:y,width:Math.max(0,w),height:Math.max(0,h),fill:f||'none',stroke:st||'none','stroke-width':sw||0,rx:rx||0},p)}
+function C(p,x,y,r,f,st,sw){return S('circle',{cx:x,cy:y,r:Math.max(.5,r),fill:f||'none',stroke:st||'none','stroke-width':sw||0},p)}
+function Ln(p,x1,y1,x2,y2,st,sw,d){var a={x1:x1,y1:y1,x2:x2,y2:y2,stroke:st,'stroke-width':sw||3,'stroke-linecap':'round'};if(d)a['stroke-dasharray']=d;return S('line',a,p)}
+function Pa(p,d,f,st,sw){return S('path',{d:d,fill:f||'none',stroke:st||'none','stroke-width':sw||0,'stroke-linejoin':'round','stroke-linecap':'round'},p)}
+function t(p,x,y,s,fs,c,an,wt){return T(p,x,y,s,fs||24,c||K.w,an||'middle',wt||700)}
+function water(p,x,y,w,h){return R(p,x,y,w,h,'url(#wtr)')}
+
+/* ================= real-world capillarity ================= */
+SH.inits.realcap=function(sl){
+  var svg=$('.rc-svg',sl),k=0,cu=0,tt=0,ss=SH.rng(sl,'.rc-s',function(){info()}),
+      NAMES=['Watering a plant','Crack in a rock','Towel in a bucket','Diya wick','Sugar cube in tea'];
+  SH.chips($('.rc-sc',sl),NAMES,0,function(i){k=i;cu=0;info()});
+  var NOTE=[
+   'Water poured on soil climbs the plant’s <b>xylem vessels</b> (hair-thin tubes, ≈ 0.05 mm) against gravity — that is how a tall plant drinks.',
+   'Rain or a stream wets a <b>narrow crack</b>; capillary rise pulls the water up. In winter it freezes, expands and <b>splits the rock</b>.',
+   'The fibres of a towel make thousands of tiny tubes. The wet patch <b>creeps up</b> from the bucket with nobody pulling.',
+   'Oil climbs the <b>wick</b> of a diya through the gaps between its threads, up to the flame.',
+   'A sugar cube is full of tiny pores. Touch it to tea and the tea <b>climbs</b> up through them.'];
+  function tg(){var s=+ss.value;return Math.min(1,.12+.88/(1+s/10))}
+  function info(){var f=tg();$('.rc-h',sl).textContent=f>.7?'High':f>.4?'Medium':'Low';$('.rc-n',sl).innerHTML='h = 2T cosθ ÷ rρg &nbsp;→&nbsp; thinner channel, higher rise';$('.rc-note',sl).innerHTML=NOTE[k]}
+  info();
+  function drops(g,x0,y0,y1,n){for(var i=0;i<n;i++){var ph=(tt*1.4+i/n)%1;C(g,x0+ph*40,y0+(y1-y0)*ph*ph,5,'#9fd4ff')}}
+  function scene0(g){ /* plant */
+    var f=cu;R(g,0,400,1000,160,'url(#sand)');for(var i=0;i<40;i++)C(g,(i*97)%1000,410+((i*53)%140),3,'rgba(0,0,0,.18)');
+    /* watering can */
+    Pa(g,'M110 120H230L240 210H100Z','#6c8aa5',K.w,3);Pa(g,'M230 150L330 105L340 125L236 180','#6c8aa5',K.w,3);Pa(g,'M100 130Q60 120 70 180','none',K.w,5);
+    drops(g,332,125,400,9);var wp=Math.min(1,tt/3);R(g,230,420,Math.min(220,90+wp*170),40,'rgba(30,70,110,.55)',null,0,20);
+    /* roots + stem */
+    Pa(g,'M640 410Q540 440 470 440M640 410Q640 470 600 500M640 410Q720 450 760 470','none','#c9a26a',5);
+    R(g,622,130,36,282,'rgba(80,160,90,.35)',K.g,3,10);
+    var top=410-f*270;[630,640,650].forEach(function(x){R(g,x-2,130,5,280,'rgba(0,0,0,.35)');R(g,x-2,top,5,410-top,'#47a8ff')});
+    [[580,150,-.5],[700,170,.5],[600,230,-.6],[690,260,.6]].forEach(function(l){S('ellipse',{cx:l[0],cy:l[1],rx:46,ry:20,fill:'#3cae5c',transform:'rotate('+(l[2]*30)+' '+l[0]+' '+l[1]+')'},g)});
+    t(g,820,200,'xylem vessels',26,K.y,'start');t(g,820,236,'(hair-thin tubes)',22,K.s,'start');Ln(g,815,205,662,230,K.y,2,'6 6');
+    if(f>.1)A(g,560,380,560,200+(1-f)*120,K.g,6,18);t(g,540,300,'water climbs',24,K.g,'end');
+    t(g,130,470,'wet soil',24,'#e8ecf0','start');
+  }
+  function scene1(g){ /* rock crack */
+    var f=cu,gap=6+(+ss.value)*.55;
+    S('polygon',{points:'0,330 170,140 290,250 430,100 600,260 740,170 900,300 1000,250 1000,430 0,430',fill:'#4c5d70'},g);
+    S('polygon',{points:'430,100 395,148 430,138 462,150',fill:'#eef3f8'},g);S('polygon',{points:'170,140 140,185 170,175 198,190',fill:'#eef3f8'},g);
+    water(g,0,470,1000,90);
+    R(g,300,110,500-gap/2-300,360,'#7d8794',K.w,3);R(g,500+gap/2,110,800-500-gap/2,360,'#6e7785',K.w,3);
+    for(var i=0;i<14;i++){Ln(g,310+(i*37)%180,130+(i*61)%300,330+(i*37)%180,150+(i*61)%300,'rgba(0,0,0,.2)',3);Ln(g,520+gap/2+(i*29)%240,130+(i*53)%300,540+gap/2+(i*29)%240,142+(i*53)%300,'rgba(0,0,0,.2)',3)}
+    var top=470-f*340;R(g,500-gap/2,top,gap,470-top,'#47a8ff');
+    t(g,500,92,'crack width '+gap.toFixed(0)+' px',22,K.y);Ln(g,500-gap/2,100,500+gap/2,100,K.y,5);
+    t(g,880,300,'rock',24,'#dfe6ee','start');t(g,880,530,'stream',24,K.w,'start');
+    if(f>.1)A(g,500,455,500,top+10,K.g,6,18);
+  }
+  function scene2(g){ /* towel */
+    var f=cu;R(g,150,40,700,16,'#9aa7b5',K.w,2,6);
+    R(g,440,56,120,420,'#d96a6a',K.w,3);for(var i=0;i<20;i++){Ln(g,440,70+i*21,560,70+i*21,'rgba(255,255,255,.28)',2);Ln(g,450+i*5.5,56,450+i*5.5,476,'rgba(0,0,0,.12)',1.5)}
+    var top=470-f*380;R(g,440,top,120,476-top,'rgba(30,90,170,.45)');
+    Pa(g,'M330 430L350 540H650L670 430','rgba(255,255,255,.05)',K.w,5);water(g,336,470,328,70);Ln(g,336,470,664,470,K.w,3);
+    t(g,330,200,'dry towel',26,'#f0d9d9','end');t(g,330,300,'wet patch',26,K.g,'end');if(f>.1)A(g,380,430,380,top+8,K.g,6,18);
+  }
+  function scene3(g){ /* diya */
+    var f=cu;Pa(g,'M250 400Q500 560 750 400Q640 470 500 470Q360 470 250 400Z','#c06a38',K.w,4);Pa(g,'M255 400H745','none','#e3a070',6);
+    R(g,300,440,400,30,'url(#oil)');
+    var wtop=440-f*170;R(g,492,300,16,150,'#efe4d0',K.w,2,4);R(g,494,wtop,12,450-wtop,'rgba(244,197,66,.85)');
+    if(f>.7){var fl=1+.08*Math.sin(tt*9);S('ellipse',{cx:500,cy:272,rx:20*fl,ry:44*fl,fill:'rgba(255,200,60,.95)'},g);S('ellipse',{cx:500,cy:282,rx:10,ry:26,fill:'#fff6c8'},g);S('ellipse',{cx:500,cy:260,rx:90,ry:90,fill:'rgba(255,200,60,.12)'},g)}
+    t(g,640,320,'cotton wick',26,K.y,'start');Ln(g,630,320,512,350,K.y,2,'6 6');t(g,300,520,'oil',26,K.y,'start');if(f>.1)A(g,540,445,540,wtop+6,K.g,6,18);
+  }
+  function scene4(g){ /* sugar cube */
+    var f=cu;Pa(g,'M280 220L310 500Q500 550 690 500L720 220Z','rgba(255,255,255,.08)',K.w,5);
+    Pa(g,'M296 330L310 500Q500 550 690 500L704 330Z','rgba(150,80,30,.7)');Ln(g,296,330,704,330,'#c88a50',4);
+    R(g,440,170,120,160,'#f4f1ea',K.w,3,6);R(g,440,330,120,60,'#f4f1ea',K.w,3,6);
+    for(var i=0;i<18;i++)C(g,450+(i*37)%100,185+(i*53)%190,3,'rgba(0,0,0,.08)');
+    var top=390-f*210;R(g,442,top,116,392-top,'rgba(160,90,40,.55)');
+    t(g,300,250,'tea',26,'#e9c9a4','end');t(g,600,150,'sugar cube',26,K.y,'start');if(f>.1)A(g,590,380,590,top+8,K.g,6,18);t(g,600,260,'tea climbs up',24,K.g,'start');
+  }
+  return SH.loop(function(dt){tt+=dt;var target=tg();cu+=(target-cu)*Math.min(1,dt*1.8);SH.clear(svg);SH.defs(svg);var g=S('g',{},svg);
+    [scene0,scene1,scene2,scene3,scene4][k](g)})};
+
+/* ================= wetting: angle of contact in real life ================= */
+SH.inits.wetting=function(sl){
+  var svg=$('.wt-svg',sl),th=SH.rng(sl,'.wt-t',function(){upd()}),tl=SH.rng(sl,'.wt-tilt',function(){upd()}),k=0,tt=0,off=0,ab=0;
+  var SC=[
+   {e:'🪟',n:'Water on clean glass',th:8,type:'glass',note:'Clean glass: adhesion beats cohesion → water <b>spreads</b>. θ is small.'},
+   {e:'🧻',n:'Water on a towel',th:0,type:'cloth',note:'θ ≈ 0°: the fibres <b>pull the water in</b>. The towel absorbs it.'},
+   {e:'🧥',n:'Raincoat',th:112,type:'coat',note:'Waterproof coating: θ &gt; 90°. Water <b>beads up</b> and rolls off — the coat stays dry.'},
+   {e:'🪷',n:'Lotus leaf',th:160,type:'leaf',note:'Wax and micro-bumps: θ ≈ 160°. Almost spherical drops that roll at the slightest tilt.'},
+   {e:'🌡️',n:'Mercury on glass',th:140,type:'hg',note:'Mercury: cohesion ≫ adhesion. θ ≈ 140°, convex ball.'},
+   {e:'🍳',n:'Oil on a plate',th:12,type:'oil',note:'Oil spreads on a clean plate (θ small) — it <b>wets</b> it. A greasy plate does the reverse to water.'},
+   {e:'🛢️',n:'Oil on water',th:20,type:'bath',note:'A drop of oil on water spreads into a thin lens: θ small, the oil <b>wets</b> the water surface.'}];
+  SH.chips($('.wt-sc',sl),SC.map(function(x){return x.n}),0,function(i){k=i;SH.setRange(th,SC[i].th);off=0;ab=0;upd()});
+  function crit(a){return a<=90?80:Math.max(3,(180-a)*.45)}
+  function upd(){var a=+th.value,s=SC[k];$('.wt-tv',sl).textContent=Math.round(a)+'°';$('.wt-tl',sl).textContent=Math.round(+tl.value)+'°';
+    var res=a<89?['WETS',K.g]:a<=91?['BORDERLINE',K.y]:['DOES NOT WET',K.r],e=$('.wt-res',sl);e.textContent=s.type==='cloth'&&a<89?'ABSORBS':res[0];e.style.color=res[1];
+    $('.wt-n',sl).innerHTML=a<89?'θ &lt; 90° → adhesion wins → liquid spreads / soaks in; concave meniscus':a<=91?'θ = 90° → flat surface':'θ &gt; 90° → cohesion wins → liquid beads up; convex meniscus';
+    $('.wt-note',sl).innerHTML=s.note}
+  upd();
+  var COL={glass:'rgba(160,210,240,.3)',cloth:'#c46a6a',coat:'#2f7d5b',leaf:'#3f9d52',hg:'rgba(160,210,240,.3)',oil:'rgba(160,210,240,.3)',bath:'url(#wtr)'};
+  function drop(g,cx,V,a,fill,maxA){var d=SH.dropCap(g,cx,360,a,V,fill,maxA);return d}
+  return SH.loop(function(dt){tt+=dt;SH.clear(svg);SH.defs(svg);var a=+th.value,tilt=+tl.value,s=SC[k],ty=s.type;
+    var g=S('g',{transform:'rotate('+tilt+' 500 360)'},svg);
+    var liq=ty==='hg'?'url(#hgm)':ty==='oil'||ty==='bath'?'rgba(244,197,66,.85)':'rgba(47,141,224,.6)';
+    /* surface */
+    R(g,60,360,880,90,ty==='bath'?'url(#wtr)':COL[ty],'#8ab5d6',3);
+    if(ty==='cloth'){for(var i=0;i<44;i++){Ln(g,70+i*20,364,70+i*20,446,'rgba(255,255,255,.18)',2)}for(var j=0;j<4;j++)Ln(g,60,378+j*20,940,378+j*20,'rgba(0,0,0,.15)',2)}
+    if(ty==='leaf')for(var m=0;m<50;m++)C(g,70+m*17.5,360,5,'#57b86a');
+    if(ty==='coat')for(var n2=0;n2<30;n2++)Ln(g,66+n2*30,364,86+n2*30,446,'rgba(255,255,255,.12)',4);
+    if(ty==='glass'||ty==='oil'||ty==='hg')t(g,500,420,'glass plate',22,K.w);
+    /* drops */
+    var cr=crit(a),slide=tilt>cr&&ty!=='cloth';if(slide)off+=(110+(tilt-cr)*7)*dt;else if(off>0&&tilt<=cr)off=off;
+    if(off>520)off=-420;
+    if(!slide&&tilt<1)off=0;
+    var V=3.4e6,p=0;
+    if(ty==='cloth'&&a<89){ab+=dt/5;if(ab>1.25)ab=0;p=Math.min(1,ab);V=3.4e6*(1-p)*(1-p)+1e3}
+    var cx=500+off;
+    if(ty==='cloth'&&a<89){var wr=60+p*150;S('ellipse',{cx:500,cy:395,rx:wr,ry:28+p*20,fill:'rgba(20,70,150,.45)'},g)}
+    if(!(ty==='cloth'&&a<89&&p>.97)){
+      if(ty==='bath'){var d2=SH.dropCap(g,cx,360,a,2.2e6,liq,230);Pa(g,'M'+(cx-d2.a)+' 360Q'+cx+' '+(360+34)+' '+(cx+d2.a)+' 360','rgba(244,197,66,.5)',K.w,2)}
+      else{var dd=drop(g,cx,V,a,liq,ty==='cloth'?200:260);
+        if(ty==='coat'||ty==='leaf'){drop(g,cx-330,V*.12,a,liq,60);drop(g,cx+300,V*.1,a,liq,55)}
+        var px=cx-dd.a,rr=70,ax=Math.cos(dd.th),ay=-Math.sin(dd.th);
+        if(a>=3&&!slide){Ln(g,px,360,px+130,360,K.y,3,'8 6');Ln(g,px-ax*70,360-ay*70,px+ax*150,360+ay*150,K.r,3);
+          Pa(g,'M'+(px+rr)+' 360A'+rr+' '+rr+' 0 0 0 '+(px+ax*rr)+' '+(360+ay*rr),null,K.g,5);t(g,px+rr+8,342,'θ',34,K.g,'start')}}}
+    t(svg,500,80,slide?'drop rolls off':ty==='cloth'&&a<89?'drop is absorbed':a<89?'drop spreads':'drop stays as a bead',30,slide?K.y:a<89?K.g:K.r);
+    t(svg,500,128,s.n,24,K.s);t(svg,110,110,s.e,84,K.w)})};
+})();
+
 (function(){
 var SH=window.SH,$=SH.$,$$=SH.$$;
 SH.inits.traps=function(sl){
@@ -3129,6 +3756,7 @@ SH.inits.pyq=function(sl){
     if(ok){done=true;SH.burst&&SH.burst(b,16);$$('.pq-o button',sl).forEach(function(x){x.disabled=true})}
     else{b.disabled=true}
   })});
+  return SH.mountFig(sl);
 };})();
 
 </script>
