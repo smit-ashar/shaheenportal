@@ -74,7 +74,10 @@
        "n": 10,
        "id": "10-thermal-properties-of-matter",
        "title": "Thermal Properties of Matter",
-       "status": "soon"
+       "status": "ready",
+       "slides": 70,
+       "kb": 851,
+       "updated": "13 Nov 2026"
       },
       {
        "n": 11,
@@ -86,19 +89,28 @@
        "n": 12,
        "id": "12-kinetic-theory",
        "title": "Kinetic Theory",
-       "status": "soon"
+       "status": "ready",
+       "slides": 55,
+       "kb": 817,
+       "updated": "13 Nov 2026"
       },
       {
        "n": 13,
        "id": "13-oscillations",
        "title": "Oscillations",
-       "status": "soon"
+       "status": "ready",
+       "slides": 81,
+       "kb": 870,
+       "updated": "13 Nov 2026"
       },
       {
        "n": 14,
        "id": "14-waves",
        "title": "Waves",
-       "status": "soon"
+       "status": "ready",
+       "slides": 84,
+       "kb": 867,
+       "updated": "13 Nov 2026"
       }
      ]
     },
