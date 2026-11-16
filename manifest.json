@@ -23,46 +23,76 @@
        "n": 2,
        "id": "02-motion-in-a-straight-line",
        "title": "Motion in a Straight Line",
-       "status": "soon"
+       "status": "ready",
+       "slides": 84,
+       "kb": 882,
+       "updated": "15 Nov 2026"
       },
       {
        "n": 3,
        "id": "03-motion-in-a-plane",
        "title": "Motion in a Plane",
-       "status": "soon"
+       "status": "ready",
+       "slides": 77,
+       "kb": 868,
+       "updated": "15 Nov 2026"
       },
       {
        "n": 4,
        "id": "04-laws-of-motion",
        "title": "Laws of Motion",
-       "status": "soon"
+       "status": "ready",
+       "slides": 112,
+       "kb": 949,
+       "updated": "15 Nov 2026"
       },
       {
        "n": 5,
        "id": "05-work-energy-and-power",
        "title": "Work, Energy and Power",
-       "status": "soon"
+       "status": "ready",
+       "slides": 99,
+       "kb": 905,
+       "updated": "15 Nov 2026"
       },
       {
        "n": 6,
-       "id": "06-system-of-particles-and-rotational-motion",
-       "title": "System of Particles and Rotational Motion",
-       "status": "soon"
+       "id": "05b-collision",
+       "title": "Collision",
+       "status": "ready",
+       "slides": 43,
+       "kb": 795,
+       "updated": "15 Nov 2026"
       },
       {
        "n": 7,
-       "id": "07-gravitation",
-       "title": "Gravitation",
-       "status": "soon"
+       "id": "06-system-of-particles-and-rotational-motion",
+       "title": "System of Particles and Rotational Motion",
+       "status": "ready",
+       "slides": 136,
+       "kb": 985,
+       "updated": "15 Nov 2026"
       },
       {
        "n": 8,
-       "id": "08-mechanical-properties-of-solids",
-       "title": "Mechanical Properties of Solids",
-       "status": "soon"
+       "id": "07-gravitation",
+       "title": "Gravitation",
+       "status": "ready",
+       "slides": 104,
+       "kb": 902,
+       "updated": "15 Nov 2026"
       },
       {
        "n": 9,
+       "id": "08-mechanical-properties-of-solids",
+       "title": "Mechanical Properties of Solids",
+       "status": "ready",
+       "slides": 53,
+       "kb": 806,
+       "updated": "15 Nov 2026"
+      },
+      {
+       "n": 10,
        "id": "09-mechanical-properties-of-fluids",
        "title": "Mechanical Properties of Fluids",
        "status": "ready",
@@ -71,7 +101,7 @@
        "updated": "06 Nov 2026"
       },
       {
-       "n": 10,
+       "n": 11,
        "id": "10-thermal-properties-of-matter",
        "title": "Thermal Properties of Matter",
        "status": "ready",
@@ -80,13 +110,13 @@
        "updated": "13 Nov 2026"
       },
       {
-       "n": 11,
+       "n": 12,
        "id": "11-thermodynamics",
        "title": "Thermodynamics",
        "status": "soon"
       },
       {
-       "n": 12,
+       "n": 13,
        "id": "12-kinetic-theory",
        "title": "Kinetic Theory",
        "status": "ready",
@@ -95,7 +125,7 @@
        "updated": "13 Nov 2026"
       },
       {
-       "n": 13,
+       "n": 14,
        "id": "13-oscillations",
        "title": "Oscillations",
        "status": "ready",
@@ -104,7 +134,7 @@
        "updated": "13 Nov 2026"
       },
       {
-       "n": 14,
+       "n": 15,
        "id": "14-waves",
        "title": "Waves",
        "status": "ready",
