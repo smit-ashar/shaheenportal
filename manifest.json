@@ -147,7 +147,17 @@
     {
      "id": "chemistry",
      "name": "Chemistry",
-     "chapters": []
+     "chapters": [
+      {
+       "n": 4,
+       "id": "04-chemical-bonding",
+       "title": "Chemical Bonding and Molecular Structure",
+       "status": "ready",
+       "slides": 111,
+       "kb": 930,
+       "updated": "23 Nov 2026"
+      }
+     ]
     },
     {
      "id": "biology",
